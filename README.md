@@ -134,23 +134,19 @@ This enables:
 ## 🖥️ Dashboard Preview
 
 ### 📊 Overview
-![Overview](assets/dashboard_overview.png)
+## 🖥️ Dashboard Preview
+
+### 📊 Overview
+![Overview](assets/overview.png)
 
 ### 🧬 Mutation Hotspots
-![Mutation](assets/mutation_hotspots.png)
+![Mutation](assets/mutation.png)
 
 ### 🌿 Lineage Trends
 ![Lineage](assets/lineage.png)
 
-### 💉 Vaccine Escape
-![Vaccine](assets/vaccine_escape.png)
-
-### 🌳 Phylogenetic Tree
-![Tree](assets/phylo_tree.png)
-
 ### 🌍 Geographic Distribution
-![Geo](assets/geo_map.png)
-
+![Geo](assets/geo.png)
 ---
 
 ## ⚙️ Installation
