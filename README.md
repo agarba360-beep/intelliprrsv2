@@ -131,15 +131,20 @@ This enables:
 
 ---
 
-## 🖥️ Dashboard Preview
+## Dashboard Preview
 
-### 📊 Overview
-## 🖥️ Dashboard Preview
-
+### Overview
 ![Overview](overview.png)
+
+### Mutation Hotspots
 ![Mutation](mutation.png)
+
+### Lineage Trends
 ![Lineage](lineage.png)
+
+### Geographic Distribution
 ![Geo](geo.png)
+
 ---
 
 ## ⚙️ Installation
