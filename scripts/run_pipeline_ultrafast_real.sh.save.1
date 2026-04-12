@@ -1,0 +1,123 @@
+#!/bin/bash
+# ============================================================
+# 🧠 IntelliPRRSV2 — FULL REAL DATA PIPELINE (Batch Incremental Mode)
+# ============================================================
+# Runs all analysis layers sequentially and writes results
+# directly into MySQL for the live Streamlit dashboard.
+# ============================================================
+
+# Stop on errors and show clear messages
+set -euo pipefail
+trap 'echo "❌ Error on line $LINENO while running: $BASH_COMMAND"' ERR
+
+# ------------------------------------------------------------
+# Environment Setup
+# ------------------------------------------------------------
+export PYTHONPATH=/home/abubakar
+BASE_DIR="/home/abubakar/intelliprrsv2"
+LOG_DIR="$BASE_DIR/logs"
+mkdir -p "$LOG_DIR"
+
+echo "==============================================="
+echo "🧠 IntelliPRRSV2 — FULL REAL DATA PIPELINE (Batch Auto-Incremental)"
+echo "📅 Started: $(date)"
+echo "==============================================="
+
+# Activate the virtual environment
+source "$BASE_DIR/venv/bin/activate"
+# ------------------------------------------------------------
+# PIPELINE RUN MARKER — START
+# ------------------------------------------------------------
+RUN_ID=$(mysql -u prrsvuser -pPrrsvPass2026! intelliprrsv2_db -N -B -e \
+"INSERT INTO pipeline_runs(status, notes) VALUES ('running','pipeline started'); SELECT LAST_INSERT_ID();")
+
+echo "🧾 Pipeline Run ID: $RUN_ID"
+
+# ------------------------------------------------------------
+# LAYER 1: Data Acquisition (Batch Auto-Incremental)
+# ------------------------------------------------------------
+echo "📡 LAYER 1: Fetching PRRSV sequences (Batch Auto-Incremental)..."
+PYTHONPATH=/home/abubakar python3 -m intelliprrsv2.scripts.fetch_prrsv_ultrafast >> "$LOG_DIR/fetch.log" 2>&1
+
+if [ $? -ne 0 ]; then
+  echo "❌ Error in Fetch Layer. Check $LOG_DIR/fetch.log"
+  exit 1
+fi
+echo "✅ Data acquisition complete."
+# Count sequences inserted in this run (run_timestamp must be used in fetch layer)
+NEW_SEQS=$(mysql -u prrsvuser -pPrrsvPass2026! intelliprrsv2_db -N -B -e \
+"SELECT COUNT(*) FROM sequences WHERE run_timestamp >= (SELECT start_time FROM pipeline_runs WHERE run_id=$RUN_ID);")
+
+echo "🧬 New sequences this run: $NEW_SEQS"
+
+mysql -u prrsvuser -pPrrsvPass2026! intelliprrsv2_db -e \
+"UPDATE pipeline_runs SET new_sequences=$NEW_SEQS WHERE run_id=$RUN_ID;"
+
+
+# ------------------------------------------------------------
+# LAYER 2: Cleaning
+# ------------------------------------------------------------
+echo "🧹 LAYER 2: Cleaning and standardizing sequences..."
+python3 "$BASE_DIR/scripts/clean_sequences_fast.py" >> "$LOG_DIR/clean.log" 2>&1
+echo "✅ Cleaning complete."
+
+# ------------------------------------------------------------
+# LAYER 3: Mutation Hotspot Analysis + MySQL Insert
+# ------------------------------------------------------------
+echo "🔥 LAYER 3: Detecting mutation hotspots..."
+python3 "$BASE_DIR/scripts/mutation_hotspot_fast.py" >> "$LOG_DIR/mutation.log" 2>&1
+echo "✅ Mutation hotspots analyzed and pushed to MySQL."
+# ------------------------------------------------------------
+# LAYER 3.5: Auto ORF Annotation Mapping (VR2332 / Lelystad)
+# ------------------------------------------------------------
+echo "🧩 LAYER 3.5: Running automatic ORF mapping..."
+python3 "$BASE_DIR/scripts/add_orf_annotations_auto.py" >> "$LOG_DIR/orf_mapping.log" 2>&1
+echo "✅ ORF annotation (auto-detect) complete."
+
+# ------------------------------------------------------------
+# LAYER 4: Phylogenetic Tree & Lineage Assignments + MySQL Insert
+# ------------------------------------------------------------
+echo "🌳 LAYER 4: Building phylogenetic tree and assigning lineages..."
+python3 "$BASE_DIR/scripts/build_phylogeny_optimized.py" >> "$LOG_DIR/lineage.log" 2>&1
+echo "✅ Lineage and tree data inserted into MySQL."
+
+# ------------------------------------------------------------
+# LAYER 5: Vaccine Escape AI
+# ------------------------------------------------------------
+echo "💉 LAYER 5: Predicting vaccine escape potential..."
+python3 "$BASE_DIR/scripts/vaccine_escape_ai_fast.py" >> "$LOG_DIR/vaccine.log" 2>&1
+echo "✅ Vaccine escape prediction completed (MySQL table updated)."
+
+# ------------------------------------------------------------
+# LAYER 6: miRNA Interactions + MySQL Insert
+# ------------------------------------------------------------
+echo "🧠 LAYER 6: Mapping miRNA–PRRSV interactions..."
+python3 "$BASE_DIR/scripts/mirna_interaction_fast_real.py" >> "$LOG_DIR/mirna.log" 2>&1
+echo "✅ miRNA interactions saved to MySQL."
+
+# ------------------------------------------------------------
+# LAYER 7: Geographical Metadata + MySQL Insert
+# ------------------------------------------------------------
+echo "🗺️  LAYER 7: Extracting and saving geographical metadata..."
+python3 "$BASE_DIR/scripts/extract_geo_metadata.py" >> "$LOG_DIR/geo.log" 2>&1
+echo "✅ Geographical metadata added to MySQL."
+
+# ------------------------------------------------------------
+# LAYER 8: Dashboard Refresh Trigger
+# ------------------------------------------------------------
+echo "📊 LAYER 8: Refreshing IntelliPRRSV2 dashboard..."
+touch "$BASE_DIR/dashboard/refresh.flag"
+echo "✅ Dashboard will reload automatically on next page refresh."
+
+# ------------------------------------------------------------
+# Completion Summary
+# ------------------------------------------------------------
+echo "==============================================="
+echo "🏁 PIPELINE COMPLETE — $(date)"
+echo "✅ All data written to MySQL database: intelliprrsv2_db"
+echo "✅ Logs available in: $LOG_DIR"
+echo "==============================================="
+
+# Deactivate environment
+deactivate
+

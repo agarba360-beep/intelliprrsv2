@@ -1,0 +1,153 @@
+#!/usr/bin/env python3
+"""
+Robust PRRSV Geo-Metadata Extractor
+-----------------------------------
+✅ Parses GenBank XML/JSON files for country and collection_date
+✅ Handles inconsistent formats safely
+✅ Inserts extracted metadata into MySQL (intelliprrsv2_db.geo_metadata)
+"""
+
+import os
+import json
+import mysql.connector
+from datetime import datetime
+from tqdm import tqdm
+
+# -----------------------------------------------
+# ✅ MySQL Connection
+# -----------------------------------------------
+conn = mysql.connector.connect(
+    host="localhost",
+    user="prrsvuser",
+    password="PrrsvPass2026!",
+    database="intelliprrsv2_db"
+)
+cursor = conn.cursor()
+
+# -----------------------------------------------
+# ✅ Paths
+# -----------------------------------------------
+DATA_DIR = "/home/abubakar/intelliprrsv2/data/fetched_sequences"
+OUTPUT_CSV = "/home/abubakar/intelliprrsv2/data/metadata/geo_metadata.csv"
+LOG_DIR = "/home/abubakar/intelliprrsv2/logs"
+os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# -----------------------------------------------
+# ✅ Create geo_metadata table if missing
+# -----------------------------------------------
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS geo_metadata (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    accession VARCHAR(50),
+    isolate VARCHAR(100),
+    country VARCHAR(100),
+    collection_date VARCHAR(50),
+    timestamp DATETIME,
+    run_timestamp DATETIME
+)
+""")
+
+# -----------------------------------------------
+# ✅ Helper function: Extract metadata safely
+# -----------------------------------------------
+def extract_metadata(json_path):
+    """Extract country and collection_date from GenBank JSON safely."""
+    try:
+        with open(json_path, "r") as f:
+            data = json.load(f)
+
+        # Some files wrap data in lists
+        if isinstance(data, list) and data:
+            record = data[0]
+        elif isinstance(data, dict):
+            record = data
+        else:
+            return None
+
+        accession = record.get("GBSeq_primary-accession", "Unknown")
+        isolate = "unknown"
+        country = "Unknown"
+        collection_date = "Unknown"
+
+        # --- Extract from top-level qualifiers ---
+        try:
+            features = record.get("GBSeq_feature-table", [])
+            for feature in features:
+                if not isinstance(feature, dict):
+                    continue
+                qualifiers = feature.get("GBFeature_quals", [])
+                for q in qualifiers:
+                    if not isinstance(q, dict):
+                        continue
+                    name = q.get("GBQualifier_name", "").lower()
+                    value = q.get("GBQualifier_value", "")
+                    if name == "isolate":
+                        isolate = value
+                    elif name == "country":
+                        country = value
+                    elif name == "collection_date":
+                        collection_date = value
+        except Exception:
+            pass
+
+        return {
+            "accession": accession,
+            "isolate": isolate,
+            "country": country,
+            "collection_date": collection_date
+        }
+
+    except Exception as e:
+        # Malformed JSON or unexpected structure
+        print(f"⚠️ Skipping {os.path.basename(json_path)}: {e}")
+        return None
+
+# -----------------------------------------------
+# ✅ Process all fetched GenBank JSON files
+# -----------------------------------------------
+files = [f for f in os.listdir(DATA_DIR) if f.endswith(".json")]
+records = []
+now = datetime.now()
+run_timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
+
+for file in tqdm(files, desc="Extracting geo metadata"):
+    json_path = os.path.join(DATA_DIR, file)
+    record = extract_metadata(json_path)
+    if record:
+        record["timestamp"] = now
+        record["run_timestamp"] = run_timestamp
+        records.append(record)
+
+# -----------------------------------------------
+# ✅ Write to CSV for reference
+# -----------------------------------------------
+import pandas as pd
+if records:
+    df = pd.DataFrame(records)
+    df.to_csv(OUTPUT_CSV, index=False)
+    print(f"✅ Saved real metadata → {OUTPUT_CSV} ({len(df)} entries)")
+
+# -----------------------------------------------
+# ✅ Insert into MySQL
+# -----------------------------------------------
+if records:
+    try:
+        insert_query = """
+        INSERT INTO geo_metadata (accession, isolate, country, collection_date, timestamp, run_timestamp)
+        VALUES (%(accession)s, %(isolate)s, %(country)s, %(collection_date)s, %(timestamp)s, %(run_timestamp)s)
+        """
+        cursor.executemany(insert_query, records)
+        conn.commit()
+        print(f"✅ Inserted {len(records)} records into MySQL table: geo_metadata")
+    except Exception as e:
+        conn.rollback()
+        print(f"❌ MySQL insert failed for `geo_metadata`: {e}")
+
+# -----------------------------------------------
+# ✅ Cleanup
+# -----------------------------------------------
+cursor.close()
+conn.close()
+print(f"✅ Geo-metadata extraction completed at {run_timestamp}")
+

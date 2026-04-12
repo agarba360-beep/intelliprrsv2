@@ -1,0 +1,289 @@
+{
+  "GBSeq": {
+    "GBSeq": {
+      "GBSeq_locus": "MW810559",
+      "GBSeq_length": "1548",
+      "GBSeq_strandedness": "single",
+      "GBSeq_moltype": "RNA",
+      "GBSeq_topology": "linear",
+      "GBSeq_division": "VRL",
+      "GBSeq_update-date": "07-SEP-2022",
+      "GBSeq_create-date": "07-SEP-2022",
+      "GBSeq_definition": "Porcine reproductive and respiratory syndrome virus isolate USA/UT2019073234/2019, partial genome",
+      "GBSeq_primary-accession": "MW810559",
+      "GBSeq_accession-version": "MW810559.1",
+      "GBSeq_other-seqids": {
+        "GBSeqid": [
+          "gb|MW810559.1|",
+          "gi|2289063611"
+        ]
+      },
+      "GBSeq_source": "Porcine reproductive and respiratory syndrome virus",
+      "GBSeq_organism": "Porcine reproductive and respiratory syndrome virus",
+      "GBSeq_taxonomy": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Arnidovirineae; Arteriviridae; Variarterivirinae; Betaarterivirus; Ampobartevirus; Betaarterivirus americense",
+      "GBSeq_references": {
+        "GBReference": [
+          {
+            "GBReference_reference": "1",
+            "GBReference_position": "1..1548",
+            "GBReference_authors": {
+              "GBAuthor": [
+                "Cardia Caserta,L.",
+                "Zhang,J.",
+                "Diel,D.G."
+              ]
+            },
+            "GBReference_title": "Rapid genotyping of Porcine reproductive and respiratory syndrome virus using minion nanopore sequencing",
+            "GBReference_journal": "Unpublished"
+          },
+          {
+            "GBReference_reference": "2",
+            "GBReference_position": "1..1548",
+            "GBReference_authors": {
+              "GBAuthor": [
+                "Cardia Caserta,L.",
+                "Zhang,J.",
+                "Diel,D.G."
+              ]
+            },
+            "GBReference_title": "Direct Submission",
+            "GBReference_journal": "Submitted (24-MAR-2021) Population Medicine and Diagnostic Sciences, Cornell University, 240 Farrier Rd, Ithaca, NY 14853, USA"
+          }
+        ]
+      },
+      "GBSeq_comment": "##Assembly-Data-START## ; Assembly Method :: Minimap2 v. 2.17 ; Sequencing Technology :: Nanopore ; ##Assembly-Data-END##",
+      "GBSeq_feature-table": {
+        "GBFeature": [
+          {
+            "GBFeature_key": "source",
+            "GBFeature_location": "1..1548",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1",
+                "GBInterval_to": "1548",
+                "GBInterval_accession": "MW810559.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "organism",
+                  "GBQualifier_value": "Porcine reproductive and respiratory syndrome virus"
+                },
+                {
+                  "GBQualifier_name": "mol_type",
+                  "GBQualifier_value": "genomic RNA"
+                },
+                {
+                  "GBQualifier_name": "isolate",
+                  "GBQualifier_value": "USA/UT2019073234/2019"
+                },
+                {
+                  "GBQualifier_name": "host",
+                  "GBQualifier_value": "swine"
+                },
+                {
+                  "GBQualifier_name": "db_xref",
+                  "GBQualifier_value": "taxon:28344"
+                },
+                {
+                  "GBQualifier_name": "geo_loc_name",
+                  "GBQualifier_value": "USA"
+                },
+                {
+                  "GBQualifier_name": "collection_date",
+                  "GBQualifier_value": "2019"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "genotype: 2"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "<1..473",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1",
+                "GBInterval_to": "473",
+                "GBInterval_accession": "MW810559.1"
+              }
+            },
+            "GBFeature_partial5": {
+              "@value": "true"
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF4"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "<1..473",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1",
+                "GBInterval_to": "473",
+                "GBInterval_accession": "MW810559.1"
+              }
+            },
+            "GBFeature_partial5": {
+              "@value": "true"
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF4"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "3"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycosylated protein 4"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "UVI27101.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "CKPCFSSSLSDIKTNTTSAAGFVVLQDISCLRHGDSSLPTIRKSSQCRTAIGTPVYITVTANVTDENYLHSSDLLMLSSCLFYASEMSEKGFKVVFGNVSGIVAVCVNFTSYVQHVKEFTQRSLVVDHVRLLHFMTPETMRWATVLACLFAILLAI"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "484..1086",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "484",
+                "GBInterval_to": "1086",
+                "GBInterval_accession": "MW810559.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF5"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "484..1086",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "484",
+                "GBInterval_to": "1086",
+                "GBInterval_accession": "MW810559.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF5"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycoprotein 5"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "UVI27102.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MLGKCLTAGCCSRLPFLWCIVPFWSAVLVNANSSSSSHFQLIYNLTLCELNGTDWLNKNFDWAVETFVIFPVLTHIVSYGALTTSHFLDTVGLVTVSTAGFYHGRYVLSSIYAVCALAALICFVVRLAKNCMSWRYSCTRYTNFLLDTKGRLYRWRSPVIIEKGGKVEVEGHLIDLKRVVLDGSVATPLTRVSAEQWGRL"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "1071..>1548",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1071",
+                "GBInterval_to": "1548",
+                "GBInterval_accession": "MW810559.1"
+              }
+            },
+            "GBFeature_partial3": {
+              "@value": "true"
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF6"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "1071..>1548",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1071",
+                "GBInterval_to": "1548",
+                "GBInterval_accession": "MW810559.1"
+              }
+            },
+            "GBFeature_partial3": {
+              "@value": "true"
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF6"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "membrane protein"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "UVI27103.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MGSSLDDFCHDSTAPQKVLLAFSITYTPVMIYALKVSRGRLLGLLHLLIFLNCAFTFGYMTFAHFQSTNRVALTMGAVVALLWGVYSAIETWKFITSRCRLCLLGRKYILAPAHHVESAAGFHPIAANDNHAFVVRRPGSTTVNGTLVPGLKSLVLGGR"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "GBSeq_sequence": "cctgcaagccatgtttcagttcgagtctttcagacatcaaaaccaacactaccagcgcagcaggttttgttgtcctccaggacatcagttgccttaggcatggcgactcgtcccttccgacgattcgcaaaagctctcaatgccgtacggcgatagggacacctgtgtatatcaccgtgacagccaatgtgacagatgagaattacttacattcttctgatctcctcatgctttcttcttgccttttctatgcctctgagatgagtgaaaagggattcaaggtggtatttggcaatgtgtcaggcatcgtggctgtgtgtgtcaactttaccagctacgtccaacatgtcaaggagtttactcaacgctccttggtggtcgatcatgtgcggctgcttcatttcatgacacctgagaccatgaggtgggcaaccgttttagcctgtctttttgctatcctactggcaatttgaatgttcaagtatgttggggaaatgcttgaccgcgggctgttgctcgcgattgccttttttgtggtgtatcgtgccgttctggtctgctgtgctcgtcaacgccaacagcagcagcagctctcattttcagttgatttataacttgacgctatgtgagctgaatggcacagattggctaaacaaaaattttgattgggcggtggagacttttgtcatctttcccgtgttgactcacattgtttcctatggtgcactcaccaccagccatttccttgacacagttggtctggttactgtgtccaccgccgggttttatcacgggcggtatgtcttgagtagtatctacgcggtctgtgctctggctgcgttgatttgcttcgttgttaggcttgcgaagaactgcatgtcctggcgctactcttgtaccagatataccaacttccttctggacactaagggcagactctatcgttggcggtcgcccgttatcatagaaaaagggggtaaggttgaggtcgaaggtcatctgatcgacctcaaaagagttgtgcttgatggttccgtggcaacccctttaaccagagtttcagcggaacaatggggtcgtctctagacgacttttgccatgatagcacggctccacaaaaggtgcttttggcgttttccattacctacacgccagtaatgatatatgctctaaaggtaagtcgcggccgactgctagggcttctgcaccttttgatctttctgaattgtgctttcaccttcgggtacatgacattcgcgcactttcagagtacaaatagggtcgcgctcactatgggagcagtagttgcacttctttggggggtgtactcagccatagaaacctggaaattcatcacctccagatgccgtttgtgcttgctaggccgcaagtacattctggcccctgcccaccacgtcgaaagtgccgcgggctttcatccgattgcggcaaatgataaccacgcatttgtcgtccggcgtcccggctccactacggttaacggcacattggtgcccgggttgaaaagcctcgtgttgggtggcagaa"
+    }
+  }
+}

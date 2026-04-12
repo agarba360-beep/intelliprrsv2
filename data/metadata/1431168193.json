@@ -1,0 +1,465 @@
+{
+  "GBSet": {
+    "GBSeq": {
+      "GBSeq_locus": "MF689000",
+      "GBSeq_length": "15320",
+      "GBSeq_strandedness": "single",
+      "GBSeq_moltype": "RNA",
+      "GBSeq_topology": "linear",
+      "GBSeq_division": "VRL",
+      "GBSeq_update-date": "24-JUL-2018",
+      "GBSeq_create-date": "24-JUL-2018",
+      "GBSeq_definition": "Porcine reproductive and respiratory syndrome virus isolate HeN1201, complete genome",
+      "GBSeq_primary-accession": "MF689000",
+      "GBSeq_accession-version": "MF689000.1",
+      "GBSeq_other-seqids": {
+        "GBSeqid": [
+          "gb|MF689000.1|",
+          "gi|1431168193"
+        ]
+      },
+      "GBSeq_source": "Porcine reproductive and respiratory syndrome virus",
+      "GBSeq_organism": "Porcine reproductive and respiratory syndrome virus",
+      "GBSeq_taxonomy": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Arnidovirineae; Arteriviridae; Variarterivirinae; Betaarterivirus; Ampobartevirus; Betaarterivirus americense",
+      "GBSeq_references": {
+        "GBReference": [
+          {
+            "GBReference_reference": "1",
+            "GBReference_position": "1..15320",
+            "GBReference_authors": {
+              "GBAuthor": [
+                "Zhang,Z.",
+                "Zhou,L.",
+                "Ge,X.",
+                "Han,J.",
+                "Guo,X.",
+                "Yang,H."
+              ]
+            },
+            "GBReference_title": "Genomic characterization and evolution analysis of six PRRSV isolates in one pig farm",
+            "GBReference_journal": "Unpublished"
+          },
+          {
+            "GBReference_reference": "2",
+            "GBReference_position": "1..15320",
+            "GBReference_authors": {
+              "GBAuthor": [
+                "Zhang,Z.",
+                "Zhou,L.",
+                "Ge,X.",
+                "Han,J.",
+                "Guo,X.",
+                "Yang,H."
+              ]
+            },
+            "GBReference_title": "Direct Submission",
+            "GBReference_journal": "Submitted (21-AUG-2017) College of Veterinary Medicine, China Agricultural University, No. 2 Yuanmingyuan West Road, Beijing 100094, China"
+          }
+        ]
+      },
+      "GBSeq_comment": "##Assembly-Data-START## ; Sequencing Technology :: Sanger dideoxy sequencing ; ##Assembly-Data-END##",
+      "GBSeq_feature-table": {
+        "GBFeature": [
+          {
+            "GBFeature_key": "source",
+            "GBFeature_location": "1..15320",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1",
+                "GBInterval_to": "15320",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "organism",
+                  "GBQualifier_value": "Porcine reproductive and respiratory syndrome virus"
+                },
+                {
+                  "GBQualifier_name": "mol_type",
+                  "GBQualifier_value": "genomic RNA"
+                },
+                {
+                  "GBQualifier_name": "isolate",
+                  "GBQualifier_value": "HeN1201"
+                },
+                {
+                  "GBQualifier_name": "host",
+                  "GBQualifier_value": "porcine"
+                },
+                {
+                  "GBQualifier_name": "db_xref",
+                  "GBQualifier_value": "taxon:28344"
+                },
+                {
+                  "GBQualifier_name": "geo_loc_name",
+                  "GBQualifier_value": "China"
+                },
+                {
+                  "GBQualifier_name": "collection_date",
+                  "GBQualifier_value": "May-2012"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "join(190..7605,7605..11981)",
+            "GBFeature_intervals": {
+              "GBInterval": [
+                {
+                  "GBInterval_from": "190",
+                  "GBInterval_to": "7605",
+                  "GBInterval_accession": "MF689000.1"
+                },
+                {
+                  "GBInterval_from": "7605",
+                  "GBInterval_to": "11981",
+                  "GBInterval_accession": "MF689000.1"
+                }
+              ]
+            },
+            "GBFeature_operator": "join",
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "ribosomal_slippage"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "polyprotein 1ab"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75084.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MSGILDRCTCTPNARVFVAEGQVYCTRCLSARSLLPLNLQVPELGVLGLFYRPEEPLRWTLPRAFPTVECSPAGACWLSAIFPIARMTSGNLNFQQRMVRVAAEIYRAGQLTPTVLKTLQVYERGCRWYPIVGPVPGVGVYANSLHVSDKPFPGATHVLTNLPLPQRPKPEDFCPFECAMADVYDIGRGAVMYVAGGKVFWAPRGGNEVKFEPVPKELKLVANRLHTSFPPHHVVDMSRFTFMTPGSGVSMRVEYQHGCLPADTVPEGNCWWRLFDSLPPEVQYKEIRHANQFGYQTKHGVPGKYLQRRLQVNGLRAVTDTHGPIVIQYFSVKESWIRHLKLAEEPSLPGFEDLLRIRVEPNTSPLAGKDEKIFRFGSHKWYGAGKRARKTRSGATTMVARHASSAHETRQATKHEGAGANKAEHLKRYSPPAEGNCGWHCISAIANRMVNSNFETTLPERVRPSDDWATDEDLVNIIQILRLPAALDRNGACGSAKYVLKLEGEHWTVSVIPGMSPTLLPLECVQGCCEHKGGLVSPDAVEISGFDPACLDRLAKVMHLPSSTIPAALAELSDDSYRPVSPAATTWTVSQFYARYRGGDHHDQVCLGKIISLCQVIEDCCCHQNKTNRATPEEVAAKIDQYLRGATSLEECLAKLERVSPPSAADTSFDWNVVLPGVEAANQTTEQPHVNSCCTLVPPVTQEPLGKDSVPLTAFSLSNCYYPAQGDEVHHRERLNSVLSKLEEVVLEEYGLMSTGLGPRPVLPSGLDELKDQMEEDLLKLANTQATSEMMAWAAEQVNLKAWVKSYPRWTPPPPPPRVQPRRTKSVKSLPEGKPVPAPRRKVRSDCGSPVLMGDNVPNGSEETVGGPLNFPTPSEPMTPMSEPVLMPASRRAPKLMTPLSGSAPVPAPRRTVTTTLTHQDEPLDLPASSQTEYEAFPLAPSQNMGILEAGGQEVEEVLSEISDILNDTNPAPVSSSSPLSSVKITRPKYSAQAIIDSGGPCSGHLQKEKEACLSIMREACDASKLGDPATQEWLSRMWDRVDMLTWRNTSAYQAFRILSGRFEFLPKMILETPPPYPCGFVMLPRTPAPSVSAESDLTIGSVATEDVPLILGKIGDTDELLDRGPSAPSKGEPVSDQPAKDPRMSPRESDESMIAPPADTGGVGSFTDLPSSDGVDVDGGGPLRTVKTKAGRLLDQLSCQVFSLVSHLPIFFSHLFKSDSGYSPGDWGFAAFTLFCLFLCYSYPFFGFAPLLGVFSGSSRRVRMGVFGCWLAFAVGLFKPVSDPVGTACEFDSPECRNVLHSFELLKPWDPVRSLVVGPVGLGLAILGRLLGGARYIWHFLLRLGIVTDCILAGAYVLSQGRCKKCWGSCVRTAPNEIAFNVFPFTRATRSSLIDLCDRFCAPKGMDPIFLATGWRGCWTGRSPIEQPSEKPIAFAQLDEKRITARTVVAQPYDPNQAVKCLRVLQAGGAMVAEAVPKVVKVSAIPFRAPFFPAGVKVDPECRIVVDPDTFTTALRSGYSTANLVLGTGDFAQLNGLKIRQISKPSGGGPHLIAALHVACSMALHMLAGVYVTAVGSCGTGTNDPWCTNPFAVPGYGPGSLCTSRLCISQHGLTLPLTALVAGFGLQEIALVVLIFVSIGGMVHRLSCKADMLCILLAIASYVWVPLTWLLCVFPCWLRWFSLHPLTILWLVFFLISVNIPSGILAVVLLVSLWLLGRYTNIAGLVTPYDIHHYTSGPRGVAALATAPDGTYLAAVRRAALTGRTMLFTPSQLGSLLEGAFRTQKPSLNTVNVVGSSMGSGGVFTIDGKIKCVTAAHVLTGNSARVSGVGFNQMLDFDVKGDFAIADCPNWQGVAPKAQFCEDGWTGRAYWLTSSGVEPGVIGNGFAFCFTACGDSGSPVITEAGELVGVHTGSNKQGGGIVTRPSGQFCNVKPIKLSELSEFFAGPKVPLGDVKIGSHIIKDTCEVPSDLCALLAVKPELEGGLSTVQLLCVFFLLWRMMGHAWTPLVAVGFFILNEILPAVLVRSVFSFGMFVLSWLTPWSAQVLMIRLLTAALNRNRWSLGFYSLGAVTSFVADLAVTQGHPLQVVMNLSTYAFLPRMMVVTSPVPVIACGVVHLLAIILYLFKYRCLHNVLVGDGVFSSAFFLRYFAEGKLREGVSQSCGMSHESLTGALAMRLTDEDLDFLTKWTDFKCFVSASNMRNAAGQFIEAAYAKALRVELAQLVQVDKVRGTMAKLEAFADTVAPQLSPGDIVVALGHTPVGSIFDLKVGSTKHTLQAIETRVLAGSKMTVARVVDPTPAPPPVPVPIPLPPKVLENGPNAWGDEDRLNKKKRRRMEAVGIFVMDGKKYQKFWDKNSGDVFYEEVHISTDEWECLRTGDPVDFDPETGIQCGHITIEDKVYNVFTSPSGRRFLVPANPENRRAQWEAAKLSVEQALGMMNVDGELTAKELEKLKRIIDKLQGLTKEQCLNLLAASGLTRCGRGGLVVTETAVKIVKFHNRTFTLGPVNLKVASEVELKDAVEHNQHPVARPVDGGVVLLRSAVPSLIDVLISGADASPKLLARHGPGNTGIDGTLWDFEAEATKEEVALSVQIIQACDIRRGDAPEIGLPYKLYPVRGNPERVKGVLQNTRFGDIPYKTPSDTGSPVHAAACLTPNATPVTDGRSVLATTMPSGFELYVPTIPASVLDYLDSRPDCPKQLTEHGCEDAALRDLSKYDLSTQGFVLPGVLRLVRKYLFAHVGKCPPVHRPSTYPAKNSMAGINGNRFPTKDIQSVPEIDVLCAQAVRENWQTVTPCTLKKQYCGKKKTRTILGTNNFIALAHRAALSGVTQGFMKKAFNSPIALGKNKFKELQAPVLGRCLEADLASCDRSTPAIVRWFAANLLYELACAEEHLPSYVLNCCHDLLVTQSGAVTKRGGLSSGDPITSVSNTIYSLVIYAQHMVLSYFKSGHPHGLLFLQDQLKFEDMLKVQPLLVYSDDLVLYAESPSMPNYHWWVEHLNLMLGFQTDPKKTTITDSPSFLGCRIINGRQLVPNRDRILAALAYHMKASNVSEYYASAAAILMDSCACLEYDPEWFEELVVGIAQCARKDGYSFPGPPFFLSMWEKLRSNHEGKKSRMCGYCGAPAPYATACGLDVCVYHTHFHQHCPVIIWCGHPAGSGSCSECEPPLGKGTSPLDEVLEQVPYKPPRTVIMHVEQGLTPLDPGRYQTRRGLVSVRRGIRGNEVDLPDGDYASTALLPTCKEINMVAVASNVLRSRFIIGPPGAGKTHWLLQQVQDGDVIYTPTHQTMLDMIRALGTCRFNVPAGTTLQFPAPSRTGPWVRILAGGWCPGKNSFLDEAAYCNHLDVLRLLSKTTLTCLGDFKQLHPVGFDSHCYVFDIMPQTQLKTIWRFGQNICDAIQPDYRDKLMSMVNTTRVTYVEKPVRYGQVLTPYHRDREDGAITIDSSQGATFDVVTLHLPTNDSLNRQRALVAITRARHAIFVYDPHRQLQSMFDLPAKGTPVNLAVHRDEQLIVLDRNNREITVAQALGNGDKFRATDKRVVDSLRAICADLEGSSSPLPKVAHNLGFYFSPDLTQFAKLPAELAPHWPVVTTQNNERWPDRLVASLRPIHKYSRACIGAGYMVGPSVFLGTPGVVSYYLTKFVRGEAQMLPETVFSTGRIEVDCREYLDDREREVAESLPHAFIGDVKGTTVGGCHHVTSKYLPRFLPKESVAVVGVSSPGKAAKAVCTLTDVYLPDLEAYLHPETQSRCWKVMLDFKEVRLMVWKDKTAYFQLEGRHFTWYQLASYASYIRVPVNSTVYLDPCMGPALCNRRVVGSTHWGADLAVTPYDYGAKIILSSAYHGEMPPGYKILACAEFSLDDPVRYKHTWGFESDTAYLYEFTGNGEDWEDYNDAFRARQKGKIYKANATSMRFHFPPGPVIEPTLGLN"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "190..7611",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "190",
+                "GBInterval_to": "7611",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "ORF1a"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "polyprotein 1a"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75085.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MSGILDRCTCTPNARVFVAEGQVYCTRCLSARSLLPLNLQVPELGVLGLFYRPEEPLRWTLPRAFPTVECSPAGACWLSAIFPIARMTSGNLNFQQRMVRVAAEIYRAGQLTPTVLKTLQVYERGCRWYPIVGPVPGVGVYANSLHVSDKPFPGATHVLTNLPLPQRPKPEDFCPFECAMADVYDIGRGAVMYVAGGKVFWAPRGGNEVKFEPVPKELKLVANRLHTSFPPHHVVDMSRFTFMTPGSGVSMRVEYQHGCLPADTVPEGNCWWRLFDSLPPEVQYKEIRHANQFGYQTKHGVPGKYLQRRLQVNGLRAVTDTHGPIVIQYFSVKESWIRHLKLAEEPSLPGFEDLLRIRVEPNTSPLAGKDEKIFRFGSHKWYGAGKRARKTRSGATTMVARHASSAHETRQATKHEGAGANKAEHLKRYSPPAEGNCGWHCISAIANRMVNSNFETTLPERVRPSDDWATDEDLVNIIQILRLPAALDRNGACGSAKYVLKLEGEHWTVSVIPGMSPTLLPLECVQGCCEHKGGLVSPDAVEISGFDPACLDRLAKVMHLPSSTIPAALAELSDDSYRPVSPAATTWTVSQFYARYRGGDHHDQVCLGKIISLCQVIEDCCCHQNKTNRATPEEVAAKIDQYLRGATSLEECLAKLERVSPPSAADTSFDWNVVLPGVEAANQTTEQPHVNSCCTLVPPVTQEPLGKDSVPLTAFSLSNCYYPAQGDEVHHRERLNSVLSKLEEVVLEEYGLMSTGLGPRPVLPSGLDELKDQMEEDLLKLANTQATSEMMAWAAEQVNLKAWVKSYPRWTPPPPPPRVQPRRTKSVKSLPEGKPVPAPRRKVRSDCGSPVLMGDNVPNGSEETVGGPLNFPTPSEPMTPMSEPVLMPASRRAPKLMTPLSGSAPVPAPRRTVTTTLTHQDEPLDLPASSQTEYEAFPLAPSQNMGILEAGGQEVEEVLSEISDILNDTNPAPVSSSSPLSSVKITRPKYSAQAIIDSGGPCSGHLQKEKEACLSIMREACDASKLGDPATQEWLSRMWDRVDMLTWRNTSAYQAFRILSGRFEFLPKMILETPPPYPCGFVMLPRTPAPSVSAESDLTIGSVATEDVPLILGKIGDTDELLDRGPSAPSKGEPVSDQPAKDPRMSPRESDESMIAPPADTGGVGSFTDLPSSDGVDVDGGGPLRTVKTKAGRLLDQLSCQVFSLVSHLPIFFSHLFKSDSGYSPGDWGFAAFTLFCLFLCYSYPFFGFAPLLGVFSGSSRRVRMGVFGCWLAFAVGLFKPVSDPVGTACEFDSPECRNVLHSFELLKPWDPVRSLVVGPVGLGLAILGRLLGGARYIWHFLLRLGIVTDCILAGAYVLSQGRCKKCWGSCVRTAPNEIAFNVFPFTRATRSSLIDLCDRFCAPKGMDPIFLATGWRGCWTGRSPIEQPSEKPIAFAQLDEKRITARTVVAQPYDPNQAVKCLRVLQAGGAMVAEAVPKVVKVSAIPFRAPFFPAGVKVDPECRIVVDPDTFTTALRSGYSTANLVLGTGDFAQLNGLKIRQISKPSGGGPHLIAALHVACSMALHMLAGVYVTAVGSCGTGTNDPWCTNPFAVPGYGPGSLCTSRLCISQHGLTLPLTALVAGFGLQEIALVVLIFVSIGGMVHRLSCKADMLCILLAIASYVWVPLTWLLCVFPCWLRWFSLHPLTILWLVFFLISVNIPSGILAVVLLVSLWLLGRYTNIAGLVTPYDIHHYTSGPRGVAALATAPDGTYLAAVRRAALTGRTMLFTPSQLGSLLEGAFRTQKPSLNTVNVVGSSMGSGGVFTIDGKIKCVTAAHVLTGNSARVSGVGFNQMLDFDVKGDFAIADCPNWQGVAPKAQFCEDGWTGRAYWLTSSGVEPGVIGNGFAFCFTACGDSGSPVITEAGELVGVHTGSNKQGGGIVTRPSGQFCNVKPIKLSELSEFFAGPKVPLGDVKIGSHIIKDTCEVPSDLCALLAVKPELEGGLSTVQLLCVFFLLWRMMGHAWTPLVAVGFFILNEILPAVLVRSVFSFGMFVLSWLTPWSAQVLMIRLLTAALNRNRWSLGFYSLGAVTSFVADLAVTQGHPLQVVMNLSTYAFLPRMMVVTSPVPVIACGVVHLLAIILYLFKYRCLHNVLVGDGVFSSAFFLRYFAEGKLREGVSQSCGMSHESLTGALAMRLTDEDLDFLTKWTDFKCFVSASNMRNAAGQFIEAAYAKALRVELAQLVQVDKVRGTMAKLEAFADTVAPQLSPGDIVVALGHTPVGSIFDLKVGSTKHTLQAIETRVLAGSKMTVARVVDPTPAPPPVPVPIPLPPKVLENGPNAWGDEDRLNKKKRRRMEAVGIFVMDGKKYQKFWDKNSGDVFYEEVHISTDEWECLRTGDPVDFDPETGIQCGHITIEDKVYNVFTSPSGRRFLVPANPENRRAQWEAAKLSVEQALGMMNVDGELTAKELEKLKRIIDKLQGLTKEQCLNC"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "11983..12753",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "11983",
+                "GBInterval_to": "12753",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "ORF2"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycosylated envelope protein GP2"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75086.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MKWGLCKASLTKLANFLWMLSRNFWCPLLISSYFWPFCLASQSPVGWWSSASDWFAPRYSVRALPFTLSNYRRSYEAFLSQCQVDIPTWGVKHPLGVLWHHKVSTLIDEMVSRRMYRVMDKAGQAAWKQVVSEATLSRISGLDVVAHFQHLAAIEAETCKYLASRLPMLHNLRLTGANVTIVYNSTLDQVFAIFPTPGSRPKLHDFQQWLIAVHSSIFSSVAASCTLFVVLWLRIPMLRSVFGFRWLGAIFLLNSW"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "11988..12209",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "11988",
+                "GBInterval_to": "12209",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "protein E"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75087.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MGSMQSLFNKIGQLFVDAFTEFLVSIVDIIIFLAILFGFTIAGWLVVFCIRLVCSAVLRARSTVHPEQLQKIL"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "12606..13370",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "12606",
+                "GBInterval_to": "13370",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "ORF3"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "envelope protein GP3"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75088.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MANSCTFLHIFLRCSFLYSFCCAVVANSNATFCFWFPLVRGNFSFELVVNYTVCPLCPTRQAAAEVLEPGKSFWCRIGHDRCSENDHDELGFMVPPGLSSEGHLTSVYAWLAFLSFSYTAQFHPEIFGIGNVSQVYVDIKHQFICAVHDGDNATLPRHDNISAVFQTYYQHQVDGGNWFHLEWLRPFFSSWLVLNVSWFLRRSPASHVSVRVFRTSKPTPPQHQASLSSRTSAALGMATRPLRRFAKFLSAARR"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "13151..13687",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13151",
+                "GBInterval_to": "13687",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "ORF4"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "GP4"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75089.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MAASFLFLLVGFKCFVVSQAFACKPCFSSSLSDIKTNTTAASGFVVLQDISCLRHGDSSSPTIRKIPQCRTAIGTPVYITITANVTDENYLHSSDLLMLSSCLFYASEMSEKGFKVVFGNVSGVVAVCINFTSYVQHVKEFTQRSLVVDHVRLLHFMTPETMRWATVLACLFAILLAI"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "13698..14300",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13698",
+                "GBInterval_to": "14300",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "ORF5"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycosylated envelope protein GP5"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75090.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MLGKCLTACCCSRLLFLWCIVPFYLAVLVNASNDNSSHIQLIYNLTLCELNGTDWLAQKFDWAVETFVIFPVLTHIVSYVALTTSHFLDTVGLATVSTAGYYHGRYVLSSIYAVCALAALICFVIRLAKNCMSWRYSCTRYTNFLLDTKGRLYRWRSPVIVEKGGKVEVEGHLIDLKRVVLDGSAATPLTRVSAERWGRP"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "14285..14809",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "14285",
+                "GBInterval_to": "14809",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "ORF6"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "membrane protein M"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75091.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MGSSLDDFCNDSTAPQKVLLAFSITYTPVMIYALKVSRGRLLGLLHLLIFLNCAFTFGYMTFAHFESTNRVALTMGAVVALLWGVYSAIETWKFITSRCRLCLLGRKYILAPAHHVESAAGFHPIAANDNHAFVVRRPGSTTVNGTLVPGLKSLVLGGRKAVKQGVVNLVKYAK"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "14799..15170",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "14799",
+                "GBInterval_to": "15170",
+                "GBInterval_accession": "MF689000.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "ORF7"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "nucleocapsid protein N"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "AXE75092.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MPNNNGKQQKKKKGNGQPVNQLCQMLGKIIAQQNQSRGKGPGKKNRKKNPEKPHFPLATEDDVRHHFTPSERQLCLSSIQTAFNQGAGTCALSDSGRISYTVEFSLPTQHTVRLIRATASPPA"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "GBSeq_sequence": "atgacgtataggtgttggctctatgccacggcatttgtactgtcaggagctgtgaccattggcacagcccaaaacttgctgcacgggaacaccctcctgtgacagccctcttcagggggattaggggtctgtccctaacaccttgcttccggagttgcactgctttacggtctctccacccctttaaccatgtctgggatacttgatcggtgcacgtgtacccccaatgccagggtgtttgtggcggagggccaggtctactgcacacgatgtctcagtgcacggtctctccttcctctgaatctccaagttcctgagcttggggtgctgggtctattttataggcccgaagagccactccggtggacgttgccacgtgcattccccactgtcgagtgctcccccgccggggcctgctggctttctgcgatttttccgattgcacgaatgactagtggaaacctgaactttcaacaaagaatggtgcgggtcgcagctgaaatctacagagccggccaactcacccctacagttctaaagactctacaagtttatgaacggggttgtcgttggtaccccattgtcgggcccgtccctggggtgggcgtttacgccaactccctgcatgtgagtgacaaacctttcccgggagcaactcatgtgttaaccaacttgccgctcccgcagaggcccaaacctgaggacttttgcccttttgagtgtgctatggctgacgtctatgacattggtcgtggcgccgtcatgtatgtggccggagggaaggtcttttgggcccctcgtggtgggaatgaagtgaaatttgaacctgtccccaaggagttgaagttggttgcgaaccgactccacacctccttcccgccccatcacgtagtggacatgtccaggtttaccttcatgacccctgggagtggtgtctccatgcgggttgagtaccaacacggctgcctccccgctgacactgtccctgaaggaaactgctggtggcgcttgtttgactcgctcccaccggaagttcagtacaaagaaattcgccatgctaaccaatttggctatcaaaccaagcatggtgtccctggcaagtacctacagcggaggctgcaagttaatggtcttcgagcagtgaccgacacacatggacctatcgtcatacagtatttctctgttaaggagagttggatccgccacctgaagttggcggaagaacccagcctccccgggtttgaggatctcctcaggatcagggttgagcccaatacgtcaccactggctggaaaggatgagaagattttccggtttggcagtcataagtggtacggtgccggaaagagagcaaggaaaacacgctctggtgcgactactatggtcgctcgtcacgcttcgtccgctcatgaaacccggcaggccacgaagcacgagggtgccggcgctaacaaggctgagcatctcaagcgctactctccgcctgccgaagggaactgtggttggcactgcatttccgccatcgccaaccggatggtgaattccaactttgagaccacccttcctgaaagagtaaggccttcagatgactgggccactgacgaggatcttgtgaacatcatccaaatcctcaggctccctgcggccttggacaggaacggcgcttgcggtagcgccaagtacgtgcttaaactggagggtgagcattggactgtctctgtgatccctgggatgtcccctactttgctcccccttgaatgtgttcagggttgttgtgagcataagggcggtcttgtttccccggatgcggtcgaaatttccggatttgatcctgcctgccttgaccgactagctaaggtaatgcacttgcctagcagtaccatcccagccgctctggccgaattgtccgacgactcctaccgtccggtttccccggccgctactacgtggactgtttcgcaattctatgctcgttatagaggaggagatcatcatgaccaggtgtgcttggggaaaatcatcagcctttgtcaagttattgaggattgctgctgccatcagaataaaaccaaccgggctactccggaagaggtcgcggcaaagattgatcagtacctccgtggcgcaacaagtcttgaggaatgcttggccaaacttgagagagtttccccgccgagcgctgcggacacctcctttgattggaatgttgtgcttcctggggttgaggcggcgaatcagacaaccgaacaacctcacgtcaactcatgctgcaccctggtccctcccgtgactcaagagcctttgggcaaggactcggtccctctgaccgccttctcactgtccaattgctattaccctgcacaaggtgacgaggttcatcaccgtgagaggttaaattccgtactctctaagttggaagaggttgtcctggaagaatatgggctcatgtccactggacttggcccgcgacccgtgctgccgagcgggctcgacgagcttaaagaccagatggaggaggatctgctaaaactagccaacacccaggcgacttcagaaatgatggcctgggcggctgagcaggtcaatttaaaagcttgggtcaaaagctacccgcggtggacaccaccaccccctccaccaagagttcaacctcgaagaacaaagtctgtcaaaagcttgccagagggcaagcctgtccctgctccgcgcaggaaggtcagatccgattgcggcagcccggttttgatgggcgacaatgtccctaacggttcggaagaaactgtcggtggtcccctcaattttccgacaccatccgagccgatgacacctatgagtgagcccgtacttatgcccgcgtcgcgacgtgcccccaagctgatgacacctttgagtgggtcggcaccagttcctgcaccgcgtagaactgtgacaacaacgctgacgcaccaggatgagcctctggatttgcctgcgtcctcacagacggaatatgaggctttccccctagcaccatcgcagaacatgggcatcctggaggcgggggggcaagaagttgaggaagtcctgagtgaaatctcggatatactaaatgacaccaaccctgcacctgtgtcatcaagcagccccctgtcaagtgttaagatcacacgcccaaaatactcagctcaagccatcatcgactctggcgggccttgcagtgggcatctccaaaaggaaaaagaagcatgcctcagcatcatgcgtgaggcttgtgatgcgtccaagcttggtgatcctgctacgcaggagtggctctctcgcatgtgggatagggttgacatgctgacttggcgcaacacgtctgcttaccaggcgtttcgcatcttaagtggcaggtttgagtttctcccaaagatgattctcgagacaccgccgccctacccgtgcggatttgtgatgttacctcgcacgcctgcaccttccgtgagtgcagagagtgacctcaccattggttcagtggccaccgaggatgttccactcatcctcgggaaaataggagacactgacgagctgcttgaccggggtccctcggcaccctccaagggagaaccggtcagtgaccaacctgccaaagatccccggatgtcgccgcgggagtctgacgagagcatgatagctccgcccgcagatacaggtggtgtcggctcattcactgatttgccgtcttcagatggtgtggatgtggacgggggggggccgttaagaacggtaaaaacaaaagcggggaggctcttagaccaactgagctgccaggtttttagcctcgtttcccatctccctattttcttctcacacctcttcaaatctgacagtggttattctccgggtgattggggttttgcagcttttactctattttgcctctttctatgttacagttacccattcttcggttttgctcccctcttgggtgtattttctgggtcttctcggcgtgtgcgaatgggggtttttggctgctggttggcttttgctgttggtctgttcaagcctgtgtccgacccagtcggcactgcttgtgagtttgactcgccagagtgtaggaacgtacttcattcttttgagcttctcaaaccttgggaccctgtccgcagccttgttgtgggccccgtcggtctcggccttgccattcttggcaggttactgggcggggcacgctatatctggcactttttgcttaggcttggcattgttacagactgtatcttggctggagcttatgtgctttctcaaggtaggtgtaaaaagtgctggggatcttgtgtaagaactgctcctaatgagatcgccttcaacgtgttcccttttacacgtgcgaccaggtcgtcactcatcgacctgtgcgatcggttttgcgcaccaaaaggcatggaccccatttttctcgccactgggtggcgtgggtgctggaccggccggagtcccattgagcaaccttctgaaaaacccatcgcgttcgcccagctggatgagaagaggattacggctagaactgtggtcgctcagccttatgatcccaaccaggccgtaaagtgcttgcgggtattacaggcgggtggggcgatggtggccgaggcagtcccaaaagtggtcaaagtttccgctattccattccgagctcctttctttcccgctggagtgaaagttgatcctgagtgcagaatcgtggttgatcccgatacttttactacagccctccggtctggctattccaccgcgaacctcgtccttggtacgggggactttgcccagctgaatggactaaagatcaggcaaatttccaagccttcagggggaggcccacacctcattgctgccttgcatgttgcctgctcgatggcgttacacatgcttgctggtgtttatgtaactgcagtggggtcctgcggtaccggcaccaacgatccgtggtgcactaacccgtttgccgtccctggctacggacctggctctctttgcacgtctagattgtgcatctcccaacacggcctcaccttgcccttgacagcacttgttgcgggattcggccttcaagaaattgccttggtcgttttgatttttgtctccatcggaggcatggttcataggttgagttgtaaggctgacatgttgtgcatcttactcgcaatcgctagttatgtttgggtacctcttacctggttgctttgtgtgtttccttgttggttgcgctggttctctttgcaccccctcaccatcctgtggttggtgtttttcttgatttctgtaaatataccctcgggaatcttggccgtggtgttattggtttctctctggcttttaggtcgttatactaacattgctggtctcgtcaccccctatgacattcatcattacaccagtggtccccgcggtgtcgccgccttggccaccgcaccagatggaacctacttggctgccgtccgccgtgctgcgctgactggtcgtaccatgctgttcaccccgtctcagctcgggtccctccttgagggcgctttcagaactcaaaagccctcactgaacaccgtcaatgtggtcgggtcctccatgggctctggcggagtgttcactattgacgggaaaatcaagtgcgtgactgccgcacatgtccttacgggtaactcagctagggtttctggggtcggcttcaatcaaatgcttgactttgatgtaaaaggggacttcgccatagctgattgcccgaattggcaaggggttgctcccaaggcccagttctgcgaggatgggtggactggtcgcgcctattggctgacatcctctggcgttgaacccggtgttattgggaatgggttcgccttctgcttcaccgcgtgtggcgattctggatccccagtgattaccgaagccggtgagcttgtcggcgttcacacaggatcaaacaaacaaggaggaggcattgtcacgcgcccctcaggccagttttgtaatgtgaagcccatcaagctgagcgagttgagtgaattcttcgctggacctaaggtcccgctcggtgatgtgaaaattggcagtcacataattaaagacacatgcgaggtgccttcagatctttgtgccctgcttgctgtcaaacccgaactggaaggaggcctttccacagttcaacttctgtgtgtgtttttcctcctgtggcgaatgatggggcatgcctggacgcccttggttgctgtggggtttttcatcctgaatgagattctcccagctgtcctggtccggagtgttttctcctttgggatgtttgtgctatcttggctcacaccatggtctgcacaagtcctgatgatcaggcttctgacagcagcccttaacagaaacagatggtctcttggtttttacagccttggtgcagtaaccagttttgtcgcagatcttgcggtaactcaagggcatccgttacaggtggtaatgaacttaagcacctatgccttcctgccccggatgatggttgtgacctcgccagtcccagtgatcgcgtgtggtgttgtgcacctccttgccataattttgtacttgtttaagtaccgctgccttcacaatgtccttgttggcgatggggtgttctcttcggctttcttcttgcgatactttgccgagggaaagttgagggaaggggtgtcgcaatcctgcgggatgagtcatgagtcgctgactggtgccctcgccatgagactcactgacgaggacttggatttccttacgaaatggactgattttaagtgctttgtttctgcgtccaacatgaggaatgcagcgggccaatttatcgaggctgcttatgcaaaagcactaagagttgaacttgctcagttggtacaggttgacaaggtccgaggcaccatggccaaactcgaggcttttgccgataccgtggcaccccaactctcgcccggtgacattgttgttgcccttggccacacgcctgttggcagcatcttcgacctaaaggttggtagcaccaagcatactctccaagccattgagactagagtccttgccgggtccaaaatgactgtggcgcgtgtcgttgacccaacccccgcacccccacccgtgcctgtgcccatccctctcccaccgaaagttctggagaacggtcccaatgcctggggggatgaggaccgtttgaacaagaagaagaggcgcaggatggaagccgtcggcatttttgtcatggacgggaaaaagtaccagaaattttgggacaagaattccggtgatgtgttttatgaggaggtccatattagcacagacgagtgggagtgccttagaactggcgaccctgtcgactttgatcctgagacagggattcagtgtgggcatatcaccattgaagataaggtttacaatgtcttcacctccccatctggcaggagattcttggtccccgccaaccccgagaatagaagagctcagtgggaagccgccaagctttccgtggagcaagcccttggtatgatgaacgtcgacggcgaactgactgccaaagaactggagaaactgaaaagaataattgacaaactccaaggcctgactaaggagcagtgtttaaactgctagccgccagcggcttgacccgctgtggtcgcggcggcttagttgttactgagacagcggtaaaaatagtcaaatttcacaaccggaccttcaccctaggacctgtgaacttaaaagtggccagcgaggttgagctaaaagacgcggttgagcacaaccaacatccggttgccagaccggttgatggtggtgttgtgctcctgcgctctgcagttccttcgcttatagatgtcttgatctccggcgctgatgcatctcctaagttactcgcccgccacgggccgggaaacactgggattgatggcacgctttgggattttgaggccgaggctactaaagaggaagttgcactcagtgtgcaaataatacaggcttgtgatattaggcgcggcgacgcgcctgaaattggtctcccttataagttgtaccctgttaggggcaaccctgagcgggtaaaaggagttttacagaatacaaggtttggagacataccttacaaaacccctagtgacactggaagcccggtgcacgcggctgcctgcctcacgcctaatgctactccggtgactgatgggcgctccgtcttggctacaaccatgccctctggctttgagttgtatgtgccgaccattccagcgtccgtccttgattatcttgattctaggcctgactgccctaaacagttaacagagcacggttgtgaggatgctgcattaagagacctctccaagtatgatttgtccacccaaggctttgttttgcctggagttcttcgcctcgtgcggaagtacctgttcgcccacgtgggtaagtgcccgcccgttcatcggccttccacttaccctgctaagaattctatggctggaataaatgggaacaggtttccaaccaaggacattcagagcgtccctgaaatcgacgttctgtgcgcacaggctgtgcgagaaaactggcaaactgttaccccttgtaccctcaagaaacagtactgtgggaagaagaagactaggacaatacttggcaccaataactttattgcgttggcccatcgggcagcgttgagtggtgttacccagggcttcatgaaaaaagcgttcaactcgcccatcgccctcgggaaaaacaaatttaaggagctacaagccccggtcctaggcaggtgccttgaagctgatcttgcgtcctgcgatcgatccacacctgcaattgtccgctggtttgccgccaatcttctttatgaactcgcctgtgctgaggagcatctaccgtcgtacgtgctgaactgctgccacgacttactggtcacgcagtccggcgcggtgactaagagaggtggcctgtcgtctggcgacccgattacctctgtgtcaaacaccatttacagcttagtgatatatgcacagcacatggtgctcagttacttcaaaagtggtcaccctcatggccttctgtttctgcaagaccagctaaagtttgaggacatgctcaaggttcaacccctgctcgtctattcggacgaccttgtgttgtatgccgagtctccctccatgccaaactaccactggtgggttgaacatctgaatcttatgctgggtttccagacggacccaaagaagacaaccatcacagactcaccatcattcctaggttgcaggataataaatgggcgccagctagtccctaaccgtgacaggatcctcgcggcccttgcctaccatatgaaggcaagtaatgtttctgaatactacgcctcggcggctgcaatactcatggacagctgtgcttgtttagagtatgatcctgaatggtttgaagagctcgtggttgggatagcgcagtgcgcccgcaaggacggctacagctttcctggcccaccgttcttcttgtccatgtgggaaaaactcaggtccaatcatgaggggaagaagtccagaatgtgcgggtactgcggggccccggctccgtacgccactgcctgtggtctcgatgtctgtgtttaccacacccacttccaccagcattgtcctgttataatctggtgtggccacccggcgggttctggttcttgtagtgagtgcgaaccccccctaggaaaaggcacaagccctctagatgaggtgttagaacaagttccgtacaagcctccgcggactgtgatcatgcatgtggagcagggtctcacccctcttgacccaggtagataccagactcgccgcggattagtctccgttaggcgtggcatcaggggaaatgaagtcgacctaccagacggtgattacgctagtaccgccttgctccctacttgtaaagagatcaacatggtcgctgtcgcttctaacgtgttgcgcagcaggtttatcatcggcccacccggtgctgggaaaacacactggcttcttcaacaagtccaggatggtgatgtcatttacacgccaactcaccagaccatgctcgacatgattagggctttggggacgtgccggttcaacgttccagcaggtacaacgctgcaattccctgccccctcccgtaccggcccatgggttcgcatcttggccggcggttggtgtcctggcaagaactccttcctggatgaagcggcgtattgcaatcaccttgatgtcttgaggcttctcagtaaaacaactctcacttgcctaggggacttcaaacaactccaccctgtgggttttgactcccattgctatgtatttgacatcatgcctcagacccaattaaagaccatctggaggttcgggcagaatatctgtgatgccattcaaccagattacagggacaaacttatgtccatggtcaacacgacccgtgtgacctacgtggaaaaacctgtcaggtatgggcaagtcctcaccccctaccacagggaccgagaggacggcgccattactatcgactccagtcaaggcgccacatttgatgtggttacactgcatttacccactaacgattcactcaacaggcaaagagctcttgttgctatcaccagggcaagacatgctatcttcgtgtatgacccacacaggcaattgcagagcatgtttgatctccccgcgaaaggcacacccgtcaaccttgcagtgcaccgtgacgaacagctgatcgtattagacagaaacaacagagaaatcacggttgctcaggctctaggcaatggagataaattcagggccacagataagcgcgttgtagattctctccgcgctatttgcgcagacctggaagggtcgagctccccgctccccaaggtcgcgcataacttgggattctatttctcacctgatttgactcagtttgctaaactcccggcagaacttgcaccccactggcccgtggtgacaacccagaacaatgaaaggtggccagatcggctggtagccagccttcgccctatccacaaatatagccgcgcgtgcattggtgccggctatatggtgggcccctcggtgtttttaggcacccctggggttgtgtcatactatctcacaaaatttgttagaggcgaggctcaaatgcttccggagacagtcttcagcactggccgaattgaggtagattgccgagagtatcttgatgatcgggagcgagaagttgctgagtccctcccacatgccttcatcggcgatgtcaaaggtaccaccgttgggggatgtcatcacgttacctccaaataccttccgcgcttccttcccaaggaatcagttgcggtggtcggggtttcgagccccgggaaagccgcgaaagcagtttgcacattgacggatgtgtacctcccagaccttgaagcgtacctccacccagagacccagtccaggtgctggaaagtgatgttggactttaaggaggttcgactgatggtatggaaagacaagacggcctattttcaacttgaaggccgtcattttacctggtatcaacttgcaagctacgcctcatacatccgagttcctgttaattctactgtgtacttggacccctgcatgggccctgctctttgcaacagaagggttgtcgggtccacccattggggagcagacctcgcagtcaccccttatgattacggtgccaaaattattctgtctagtgcataccatggtgaaatgcctccaggttacaaaattctggcgtgcgcggagttctcgcttgatgatccagtaaggtacaaacacacctggggatttgaatcggatacagcgtatctgtacgagtttactggaaatggtgaggactgggaggattacaatgatgcgtttcgggcgcgccagaaagggaaaatttataaagctaatgccaccagcatgaggtttcattttcccccgggccctgtcattgaaccaactttaggcctgaattgaaatgaaatggggtctatgcaaagcctctttaacaaaattggccaactttttgtggatgctttcacggaatttctggtgtccattgttgatatcatcatatttttggccattttgtttggcttcacaatcgccggttggctggtggtcttctgcatcagactggtttgctccgcggtactccgtgcgcgctctaccgttcaccctgagcaattacagaagatcttatgaggcctttctttctcagtgtcaggtggacattcccacctggggcgtcaaacaccctttgggggtgctttggcaccataaggtgtcaaccctgattgatgaaatggtgtcgcgtcgaatgtaccgcgtcatggataaagcagggcaggctgcctggaaacaggtggtgagcgaggctacattgtctcgcattagtggtttggatgtggtggctcactttcaacatcttgccgctattgaagccgagacttgtaaatatttggcttcccggctacccatgctgcacaacctgcgcttgacaggggcaaatgtaaccatagtgtataatagtactttggatcaggtgtttgccattttcccaacccctggttcccggccaaagcttcacgattttcagcaatggctaatagctgtacattcctccatattttcctccgttgcagcttcttgtactctttttgttgtgctgtggttgcgaattccaatgctacgttctgtttttggtttccgctggttaggggcaatttttcttttgaactcgtggtgaattacacggtatgcccgctttgcccaacccggcaggcagccgctgaggtccttgagcccggcaagtctttttggtgcaggatagggcatgaccgatgtagtgagaacgatcatgacgaactagggttcatggttccgcctggcctctccagcgaaggccacttgaccagtgtttacgcctggttggcgttcctgtccttcagctacacggcccagttccatcccgagatatttgggatagggaatgtgagtcaagtttatgttgacatcaagcaccaattcatctgcgctgttcacgacggggataacgccaccttgcctcgccatgacaatatttcagccgtatttcagacctactaccaacaccaggtcgacggcggcaattggtttcacctggaatggctgcgtcctttcttttcctcttggttggttttaaatgtttcgtggtttctcaggcgttcgcctgcaagccatgtttcagttcgagtctttcggacatcaaaaccaacaccaccgcagcatcaggcttcgttgtcctccaggacatcagctgccttaggcatggcgactcgtcctctccgacgattcgcaaaattcctcagtgccgcacggcgatagggacgcccgtgtacatcaccatcactgccaatgtcacagatgaaaattatctacattcttctgatctcctcatgctttcttcttgccttttctatgcttccgagatgagtgaaaagggattcaaagtggtgtttggcaatgtgtcaggcgtcgtggctgtgtgcatcaactttaccagctacgtccaacacgtcaaggagtttacccaacgctccttagtggtcgatcatgtgcgactgcttcatttcatgacacctgagacaatgaggtgggcaaccgttttagcctgtctttttgccatcctactggcaatttgaatgttcaagtatgttggggaagtgcttgaccgcgtgctgttgctcgcgattgctttttttgtggtgtatcgtgccgttctatcttgctgtgctcgtcaacgccagcaacgacaacagctctcatattcagttgatttataacttaacgttatgtgagctgaatggcacagattggctggcacaaaaatttgactgggcagtggagacttttgtcatcttccccgtgttgactcacattgtttcctatgtggcactcaccaccagccatttccttgacacagttggtctggccactgtgtccaccgccggatattatcacgggcggtatgtcttgagtagcatttacgcagtctgtgctctggctgcgctgatttgctttgtcattaggcttgcgaagaactgcatgtcctggcgctactcttgcaccagatataccaacttccttctggacactaagggcagactctatcgttggcggtcgcccgtcattgtggagaaagggggtaaggttgaggtcgaaggtcacctgatcgacctcaagagagttgtgcttgatggttccgcggcaacccctttaaccagagtttcagcggaacgatggggtcgtccctagacgacttctgcaatgatagcacagctccacagaaggtgcttttggcgttttccattacctacacgccagtgatgatatatgctctaaaggtaagtcgcggccgactgctagggcttctgcaccttttgatctttctgaattgtgcttttaccttcgggtacatgacattcgcgcactttgagagcacaaatagggtcgcgctcactatgggagcagtagttgcacttctttggggagtgtactcagccatagaaacctggaaattcatcacctccagatgccgtttgtgcttgctaggccgcaagtacattctggcccctgcccaccacgtcgaaagtgccgcgggctttcatccgattgcggcaaatgataaccacgcatttgtcgtccggcgtcccggctccactacggtcaacggcacattggtgcccgggttgaaaagcctcgtgttgggtggcagaaaagctgttaagcagggagtggtaaaccttgttaaatatgccaaataacaacggcaagcagcaaaagaaaaagaaggggaatggccagccagtcaatcagctgtgccaaatgctgggtaagatcatcgcccaacaaaaccagtccagaggcaagggaccggggaagaaaaataggaagaaaaacccggagaagccccatttccctctagcgactgaagatgacgtcaggcatcactttacccctagtgagcggcaattgtgtctgtcgtcgatccagactgcattcaatcagggcgctggaacttgtgccctgtcagattcagggaggataagttacactgtggagtttagtttgccgacgcaacatactgtgcgtctgatccgcgccacagcatcacccccagcatgatgggctggcattctttggcacctcagtgttagaattgggagaatgtgtggtgaatggcactgattgacactgtgcctctaagtcacctattcaattagggcgaccgtgtgggggtaaagtttaattggcgagaaccatgcggccgtaatt"
+    }
+  }
+}

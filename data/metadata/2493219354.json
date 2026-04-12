@@ -1,0 +1,725 @@
+{
+  "GBSet": {
+    "GBSeq": {
+      "GBSeq_locus": "OQ459667",
+      "GBSeq_length": "14989",
+      "GBSeq_strandedness": "single",
+      "GBSeq_moltype": "RNA",
+      "GBSeq_topology": "linear",
+      "GBSeq_division": "VRL",
+      "GBSeq_update-date": "26-APR-2023",
+      "GBSeq_create-date": "26-APR-2023",
+      "GBSeq_definition": "Porcine reproductive and respiratory syndrome virus strain GXYN20220502, complete genome",
+      "GBSeq_primary-accession": "OQ459667",
+      "GBSeq_accession-version": "OQ459667.1",
+      "GBSeq_other-seqids": {
+        "GBSeqid": [
+          "gb|OQ459667.1|",
+          "gi|2493219354"
+        ]
+      },
+      "GBSeq_source": "Porcine reproductive and respiratory syndrome virus",
+      "GBSeq_organism": "Porcine reproductive and respiratory syndrome virus",
+      "GBSeq_taxonomy": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Arnidovirineae; Arteriviridae; Variarterivirinae; Betaarterivirus; Ampobartevirus; Betaarterivirus americense",
+      "GBSeq_references": {
+        "GBReference": {
+          "GBReference_reference": "1",
+          "GBReference_position": "1..14989",
+          "GBReference_authors": {
+            "GBAuthor": [
+              "Zhang,K.",
+              "Wei,Z.Z.",
+              "Wang,D.X.",
+              "Chen,C.G.",
+              "Pang,L.Y.",
+              "Liu,Y.K."
+            ]
+          },
+          "GBReference_title": "Direct Submission",
+          "GBReference_journal": "Submitted (15-FEB-2023) Guangxi University, Laboratory of Animal infectious Diseases and Molecular Immunology, College of Animal Science and Technology, 100 East University Road, NanNing, Guangxi 530004, China"
+        }
+      },
+      "GBSeq_comment": "##Assembly-Data-START## ; Sequencing Technology :: Sanger dideoxy sequencing ; ##Assembly-Data-END##",
+      "GBSeq_feature-table": {
+        "GBFeature": [
+          {
+            "GBFeature_key": "source",
+            "GBFeature_location": "1..14989",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1",
+                "GBInterval_to": "14989",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "organism",
+                  "GBQualifier_value": "Porcine reproductive and respiratory syndrome virus"
+                },
+                {
+                  "GBQualifier_name": "mol_type",
+                  "GBQualifier_value": "genomic RNA"
+                },
+                {
+                  "GBQualifier_name": "strain",
+                  "GBQualifier_value": "GXYN20220502"
+                },
+                {
+                  "GBQualifier_name": "isolation_source",
+                  "GBQualifier_value": "Lungs"
+                },
+                {
+                  "GBQualifier_name": "host",
+                  "GBQualifier_value": "swine"
+                },
+                {
+                  "GBQualifier_name": "db_xref",
+                  "GBQualifier_value": "taxon:28344"
+                },
+                {
+                  "GBQualifier_name": "geo_loc_name",
+                  "GBQualifier_value": "China"
+                },
+                {
+                  "GBQualifier_name": "collection_date",
+                  "GBQualifier_value": "May-2022"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "genotype: North American"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "5'UTR",
+            "GBFeature_location": "1..191",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "1",
+                "GBInterval_to": "191",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "191..7279",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "191",
+                "GBInterval_to": "7279",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF1a"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "191..7279",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "191",
+                "GBInterval_to": "7279",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF1a"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "cysteine/serine protease"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "polyprotein"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53950.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MSGILDRCTCTPNARVFMAEGQFYCTRCLSARSLLPLNLQVSELGVLGLFYRPEEPLRWTLPRAFPTVECSPAGACWLSAIFPIARMTSGNLNFQQRMVRVAAELYRAGQLTPAVLKALQVYERGCRWYPIVGPVPGVAVYANSLHVSDKPFPGATHVLTNLPLPQRPKPEDFCPFECAMADVYDIGRGAVMYVAGGKVSWAPRGGNEVKFEPVPKELKLVANRLHTSFPPHHVVDMSRFTFMTPGCGVSMRVEYQCGCLPADTVPEGNCWWRLFDSLPPEVQYKEIRHANQFGYQTKHGVSGKYLQRRLQVNGLRAVTDIYGPIVIQYFSVKESWIRHLKLVEEPSLPGFEDLLRIRVEPNTSPLAGKDEKIFRFGSHKWYGAGRRARKTRPGATTKTRRATKHEGAGADKAAHLKRYSPPAEGNCGWHCISAIANRMVNSNFETTLPERARPSDDWATDEDLVNTIQILRLPAALDRNGACGSAKYVLKLEGEHWTVSVIPGMSPTLLPLECVQGCCEHKGGLVSPDAVEISGFDPACLDRLAKVMHLPSSTIPAALAELSDDSNRPVSPAVTTWTVSQFYARHRGGNHHDYACLKKIVSLCQLLESCCCSQNRANPVTLHEVRGKIDQYLRGAVNLEECLARLEKARPPSVLDASFDWDVVLPGMGAAAQAVEPPLTDQCHAPATVVAQRSSPEFQSKKPWSVRSLPGNRPVPAPRRKTRSSCGSLAPLGGNPPDSWEDLAGGSFHPPDLSKPMAHSSELVPVPAPRRTVPCLKPLPIMPTPVPAPRCGLQRADGVNLAVGTPACQGELPDLSASSQTEYEASPLVLLQSEGALAVGRREADEVLSEATGMSDDIALTPVSSSSSLSSVEITRPKYSAQAIIDTGGPCCGHLQEVKEKYLNVMREACDATKLDDPATQEWLSHMWDRVDMLTWRGTSIFQAPFILAEKFKLLPKMILETPPPYPCGFVMMPRTPAPSVGAESDLTVGSVATEDVPHILGNARGVNKTTDQEPLVPFAGGSTDDQPAGELGTQASPADTGGADLGLNSGGLPEHAGLSPPDGANTGRRRPLCTVKVKAEKYFDLLSRWVFGIVSHLPVFFSRLFRADGHYSPSDWGFAAFTLLCLILCYSYPAFGVAPLVGVFSGTSRRVRMGVFGCWLAFAIGLFKPVSDPVGTACEFDSPECRDILHSFELLQPWEPVRSLVLGPVGLSLAVLGRLLGGARHIWLLLLRLGILSDCVLAGAYVLSQGRCKKCWGSCIRTAPSEVAFNVFPFTRATRSSLINLCDRFCAPKGMDPIFLATGWRGCWTGQSPIEQPSDKPIAYAQLDEKKITARTVVAQPYDPNQAVKCLRVLQGGGVMVAEAVPKVTKVSVIPFRAPFFPTGVKVDPDCRIVVDPDTFTTALRSGYSTSNLILGVGDFAQLNGLKVRQISRPSGGGPHLAAALHVACSMTLHMLAGIYVTSVGTCGTGTNDPWCTDPFAVPGYGPGSLCTSRLCISQHGLTLPLTALVTGFGVQEIALVVLIFVSIGGLAHRLSCKADVMFVLLAIASYVWAPLTWLLCLFPCWLRCFSLHPFTILWLVFFLISVNAPSGILALVLLVFLWLLGRYTNVAGLVTPYDIHHYTNGPRGVAALATAPDGTYLAAVRRAALTGRTMLFTPSQLGSLLEGAFRTQKPSLNTVNVVGSSMGSGGVFTIDGRIKCVTAAHVLSGNSARVSGVGFNQMLDFDVNGDFAVADCPNWQGVAPKTRFCSDDWTGRAYWLTSSGVEPGVIGKGFAFCFTACGDSGSPVITEAGELVGVHTGSNKQGGGIVTRPSGQFCNVTPTKLSELSEFFAGPKVPLGDVKIGSHIIRDVSEVPSDLCALLAAKPELEGGLSTVQLLCVFFLLWRMMGHAWTPLVAVGFFVLNEVLPAVLVRSVFSFGMFVLSWLTPWSAQVLMIRLLTAALNRNRLSLVFYSLGAVTGFVADLAATQGHPLQTVMNLSTYAFLPRVMVVTSPVPVIACGVVHLLAIILYLFKHRCLHFVLVGDGVFSAAFFLRYFAEGKLREGVSQSCGMNHESLTGALALKLNDEDLDFLTKWTDFKCFVSASNMRNAAGQFIEAAYAKALRVELAQLVQVDKVRGTLAKLEAFADTVAPQLSPGDIVVALGHTPVGSIFDLKVGSTKHTLQAIETRVLAGSKMTVARVVDPTPAPPPIPVPVPLPSKVLENGPNAWGDEDRLNKKKRRRMEAVGIFVMDGKKYQKFWDKNSGDVFYEEVHVSTDEWECLRTGDPVDFDPETGIQCGHITIEDKVYNVFTSPSGRKFLVPANPENRRAQWEAAKLSVEQALGMMNVDGELTAKELEKLKRIIDKLQGLIKEQCLNC"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "<7267..11649",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "7267",
+                "GBInterval_to": "11649",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_partial5": {
+              "@value": "true"
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF1b"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "<7267..11649",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "7267",
+                "GBInterval_to": "11649",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_partial5": {
+              "@value": "true"
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF1b"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "helicase"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "RNA-dependent RNA polymerase"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53951.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "FKLLAASGLTRCGRGGLVVTETAVKIVKFHNRTFTLGPVNLKVASEVELKDAVEHNQHPVARPVDGGVVLLRSAVPSLIDVLISGADTSPKLLARHGPGNTGIDGTLWDFEAEATKEEVALSAQIIQACDIRRGDAPEIGLPYKLYPVRGNPERVKGVLENTRFGDIPYKTPSDTGSPVHAAACLTPNATPVTDGRSVLATTMPSGFELYVPTIPASVLDYLDSRPDCPKQLTEHGCEDAALRDLSKYDLSTQGFVLPGVLRLVRRYLFTHVGKCPPVHRPSTYPAKNSMAGINGNRFPTKDIQSVPEIDVLCAQAVRENWQTVTPCTLKKQYCGKKKTRTILGTNNFIALAHRAVLSGVTQGFMKKAFNSPIALGKNKFKELQAPVLGRCLEADLASCDRSTPAIVRWFAANLLYELACAEEHLPSYVLNCCHDLLVTQSGAVTKRGGLSSGDPITSVSNTIYSLVIYAQHMVLSYFKSAHPHGLLFLQDQLKFEDMLKVQPLIVYSDDLVLYAESPSMPNYHWWVEHLNLMLGFQTDPKKTTITDSPSFLGCRIINGRQLVPNRDRILAALAYHMKASNVSEYYASAAAILMDSCACLEYDPEWFEELVVGIAQCARKDGYSFPGPPFFLSMWEKLRSNHEGKKSRMCGYCGAPAPYATACGLDVCVYHTHFHQHCPVVIWCGHPAGSGSCSECKPPLGKGTSPLDEVLEQVPYKPPRTVIMHVEQGLTPLDPGRYQTRRGLVSVRRGIRGNEVDLPDGDYASTALLPTCKEINMVAVASNVLRSRFIIGPPGAGKTHWLLQQVQDGDVIYTPTHQTMLDMIRALGTCRFNVPTGTTLQFPAPSRTGPWVRILAGGWCPGKNSFLDEAAYCNHLDVLRLLSKTTLTCLGDFKQLHPVGFDSHCYVFDIMPQTQLRTIWRFGQNVCDAIQPEYRDKLVSMVNTTRVTYVERPVRYGQVLTPYHRDREDGAITIDSSQGATFDVVTLHLPAKDSLNRQRALVAITRARHAIFVYDPHRQLQNVFDLPAKSTPVNLAVLRDEQLIVLDRNNKECTVAQALGNGDKFRATDKRVVDSLRAICADLEGSSSPLPKVAHNLGFYFSPDLTQFAKLPAELAPHWPVVTTQNNDKWPDRLVASLRPIHKYSRACIGAGYMVGPSVFLGAPGVVSYYLTKFVKGEAQVLPETIFSTGRIEVDCREYLDDREREVAASLPHAFIGDVKGTTVGGCHHVTSKYFPRFLPKESVAVVGVSSPGKAAKAMCTLTDVYLPDLEAYLHPDTPSKCWKMMLDFKEVKLMVWKNSTAYFQLEGRHFTWYQLASYASYIRVPVNSTVYLDPCMGPALCNRRVVGSTHWGADLAVTPYDYGAKLILSSAYHGEMPPGYKILACAEFSLDDPVRYKHTWGFESDTAYLYEFTEDGEDWEDYNDAFRARQKGKIYKATATNMRFYFPPGPVVEPTLGLN"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "11651..12421",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "11651",
+                "GBInterval_to": "12421",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF2a"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "11651..12421",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "11651",
+                "GBInterval_to": "12421",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF2a"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "GP2; ORF2a"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycosylated membrane protein 2"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53952.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MKWGPYKASLTKSANSLWTLLRSFWCLLLTSSYFWPFCLASQSPDGWWYFASDWFAPRYSVRALPFTLSNYRRSYEAYLSQCRGDIPTWGVKHPLGMFWHHKVSTLIDEMVSRRMYRVMDKAGQAAWKQVVSEATLSRISGLDVVAHFQHLAAIEAETCKYLASRLPMLHNLRAAGSNVTIVYNSTLHQVCAIFPTPGSRPKLHDFQQWLIAVHSSIFSSVAASCTLFVVLWLRVPILRTVFGFHWLGAIFPSSSW"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "11656..11877",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "11656",
+                "GBInterval_to": "11877",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF2b"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "11656..11877",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "11656",
+                "GBInterval_to": "11877",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF2b"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "E; ORF2b"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "small envelope protein E"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53953.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MGAVQSLFDKIGQLFVDAFTEFLVSIVDIIIFLAILFGFTIAGWLVVFCIRLVCSAILRARPAIHSEQLQKIL"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "12274..13038",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "12274",
+                "GBInterval_to": "13038",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF3"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "12274..13038",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "12274",
+                "GBInterval_to": "13038",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF3"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "GP3; ORF3"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycosylated membrane protein 3"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53954.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MANSRTFIHILLCCSFLYSFCCAMVASANSTYCFWFPLVRGNFSFELLVNYTVCPPCLTRQAAAQISEPNRSLWCRIGNDRCEESDHDELGFVIPPGLSNEGHLTSVYAWLAFLSFSYTAQYHPEIFGIGNVSKVYVDIKNQFICAEHDGQNATLPRHDNISAVFQTYYQHQVDGGNWFHLEWLRPFFSSWLVLNVSWFLRRSPVSHVSVQVFQKSRPTPLQQQALLSSKTSAVLGIATRPLRRFAKSLNAVRR"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "12819..13355",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "12819",
+                "GBInterval_to": "13355",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF4"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "12819..13355",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "12819",
+                "GBInterval_to": "13355",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF4"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "GP4; ORF4"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycosylated membrane protein 4"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53955.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MAAPLLFLLVSFECFMVSQAFACKPCFSSSLSEIKTNTTAAAGFAVLQDIGCLRHSDSSSKTFRKIPQCRTAIGTPVYITITANVTDENYLHSSDLLMLSSCLFYASEMSEKGFKVLFGNVSGIVAVCVNFTNYVQHVKEFTHRSLVVDHVRLLHFMTPETMRWATVLACLFAILLAI"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "13356..13496",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13356",
+                "GBInterval_to": "13496",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF5a"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "13356..13496",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13356",
+                "GBInterval_to": "13496",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF5a"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "ORF5a"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53956.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MFRYVGEMLDRGLLLAIAFFVVYRAILFCCARQRQRQQQLPFTVDL"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "13366..13968",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13366",
+                "GBInterval_to": "13968",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF5"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "13366..13968",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13366",
+                "GBInterval_to": "13968",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF5"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "GP5; ORF5"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "glycosylated membrane protein 5"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53957.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MLGKCLTAGYCSQLLFSWCIVPFCFAVLVNANGNSSSHLQLIYNLTICELNGTDWLNKKFDWAVETFVIFPALTHIVSYGALTTSHLLDTVGLITVSTAGYYHGRYVLSSIYAVCALAALICFTIRLSKNCMSWRYSCTRYTNFLLDTKGKLYRWRSPVIIEKGGKVDVEGHLIDLKRVVLDGSAATPVTKISAEQWCRP"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "13953..14477",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13953",
+                "GBInterval_to": "14477",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF6"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "13953..14477",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "13953",
+                "GBInterval_to": "14477",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF6"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "M; ORF6"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "matrix protein"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53958.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MVSSIDDFCNDSTAVQKVLLAFSITYTPIMIYALKVSRGRLLGLLHLLIFLNCAFTFGYMTFVHFQSTNKVALTMGAVVALLWGVYSAIETWRFITSRCRLCLLGRRYILAPAHHVESAAGFHPITASDNHAFVVRRPGSTTVNGTLVPGLKSLVLGGRKAVKRGVVNLVKYAK"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "gene",
+            "GBFeature_location": "14467..14838",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "14467",
+                "GBInterval_to": "14838",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": {
+                "GBQualifier_name": "gene",
+                "GBQualifier_value": "ORF7"
+              }
+            }
+          },
+          {
+            "GBFeature_key": "CDS",
+            "GBFeature_location": "14467..14838",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "14467",
+                "GBInterval_to": "14838",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            },
+            "GBFeature_quals": {
+              "GBQualifier": [
+                {
+                  "GBQualifier_name": "gene",
+                  "GBQualifier_value": "ORF7"
+                },
+                {
+                  "GBQualifier_name": "note",
+                  "GBQualifier_value": "N; ORF7"
+                },
+                {
+                  "GBQualifier_name": "codon_start",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "transl_table",
+                  "GBQualifier_value": "1"
+                },
+                {
+                  "GBQualifier_name": "product",
+                  "GBQualifier_value": "nucleocapsid protein"
+                },
+                {
+                  "GBQualifier_name": "protein_id",
+                  "GBQualifier_value": "WGH53959.1"
+                },
+                {
+                  "GBQualifier_name": "translation",
+                  "GBQualifier_value": "MPNNNGKQQNKKKGKGQPVDQLCQMLGKIIAQQNQSRGKGPGKKNKNKNPEKPHFPLATEDDVRHHFTPSERQLCLSSIRTAFNQGAGSCTLSDSGRISYTVEFSLPTHHTVRLIRVTASPSA"
+                }
+              ]
+            }
+          },
+          {
+            "GBFeature_key": "3'UTR",
+            "GBFeature_location": "14838..14989",
+            "GBFeature_intervals": {
+              "GBInterval": {
+                "GBInterval_from": "14838",
+                "GBInterval_to": "14989",
+                "GBInterval_accession": "OQ459667.1"
+              }
+            }
+          }
+        ]
+      },
+      "GBSeq_sequence": "atgacgtataggtgttggctctatgccttggcatttgtattgtcaggagctgtgaccattggcacagcccaaaacttgctgcacagaaacacccttctgtgatagcctccttcaggggagcttaggggtttgtccctagcaccttgcttccggagttgcactgctttacggtctctccacccctttaaccatgtctgggatacttgatcggtgcacgtgtacccccaatgccagggtgtttatggcggagggccaattctactgcacacgatgtctcagtgcacggtctctccttcccctgaacctccaagtttctgagctcggggtgctaggcctattctacaggcccgaagagccactccggtggacgttgccacgtgcattccccactgttgagtgctcccccgccggggcctgctggctttctgcaatctttccaatcgcacgaatgaccagtggaaacctgaactttcaacaaagaatggtacgggtcgcagctgagctttacagagccggccagctcacccctgcagtcttgaaggctctacaagtttatgaacggggttgccgctggtaccccatagttggacctgtccctggagtggccgtttacgccaactccctgcatgtgagtgacaaacctttcccgggagcaactcatgtgttaaccaacttgccgctcccgcagaggcccaaacctgaggacttttgcccttttgagtgtgctatggctgacgtctatgacattggtcgtggcgccgtcatgtatgtggccggaggaaaggtctcttgggcccctcgtggtgggaatgaagtgaaatttgaacctgtccccaaggagttgaagttggttgcgaaccgactccacacctccttcccgcctcatcacgtagtggacatgtccagatttaccttcatgacccctgggtgtggtgtctccatgcgggttgagtaccaatgcggctgcctccccgctgacactgtccctgaaggaaactgctggtggcgcttgtttgactcgctcccaccggaagttcagtacaaagaaattcgccacgctaaccaatttggctatcaaaccaagcatggtgtctctggcaagtacctacagcggaggctgcaagttaatggtcttcgggcagtgaccgacatatatggacctatcgtcatacagtacttctctgttaaggagagttggatccgccacctgaagttggtggaagaacccagcctcccagggtttgaggatctcctcagaatcagggttgagcccaatacgtcaccactagctggaaaggatgagaagattttccggtttggcagtcataagtggtacggtgccggaaggagagcaaggaaaacacgccctggtgcaactactaaaacccggcgggccacgaagcacgagggtgccggcgctgacaaggctgcgcatctcaagcgctactcaccgcctgccgaagggaactgtggttggcactgcatttccgccatcgccaaccggatggtgaattccaactttgagaccacccttcctgaaagagcaaggccttcagatgactgggccactgacgaggatcttgtgaataccatccaaatcctcaggctccctgcggccttggacaggaacggcgcttgcggtagcgccaagtacgtgcttaaactggagggtgagcattggactgtctctgtgatccctgggatgtcccctactttgctcccccttgaatgtgttcagggttgttgcgaacataagggcggtcttgtttccccggatgcggtcgaaatttccggatttgaccctgcctgccttgaccgattggctaaggtaatgcacttgcctagcagcaccatcccggccgctctggccgaattgtccgacgactccaaccgtccggtttccccagccgtcactacgtggactgtttcgcaattctatgctcgtcatagaggagggaatcatcatgattatgcgtgcttgaaaaaaattgtcagcctttgtcaactgcttgagagctgctgctgctctcagaatagagctaacccggtcaccctgcatgaggtgagaggaaaaattgaccagtacctccgtggtgcggtcaatcttgaagaatgcttggctaggcttgagaaagctcgcccgcctagtgtattggacgcctcctttgactgggatgtcgtgcttcctggaatgggagcggccgctcaagcagtggaaccgccccttaccgaccagtgtcacgctccggccactgtcgtggctcaaaggtcatcgccggaattccagtcaaaaaaaccgtggtctgtcaggagccttccagggaacaggcctgttcctgctccacgccggaagaccaggtccagttgtggcagtttggccccattgggtggtaatccccctgacagctgggaagacttggccggtggttcctttcatcccccagacctgtctaaaccaatggcccattcgagtgaactcgtgcctgttcctgcaccgcgcaggactgtgccctgtctgaagccgttaccgataatgccaacccctgtgcccgcaccacgatgtgggcttcagcgggcagatggggtgaacttggcggtaggaactccggcgtgccagggtgagctccccgatttgtccgcatcttcgcagactgaatatgaggcttcccctttggtattgctgcagagtgaaggcgccctggcggtagggagacgggaggctgacgaagtcctgagtgaagccacaggcatgtcggacgacattgcattaacacccgtgtcgtcaagcagttccctgtcaagtgtagagatcacacgccccaaatactcagctcaagccattattgacacaggtgggccctgttgtgggcacctccaagaggtaaaggagaaatacctcaacgtgatgcgtgaggcatgtgatgcgaccaaacttgatgaccctgccacacaagaatggctttcccacatgtgggatagggtggatatgctaacctggcgcggcacgtccatttttcaagcgccttttatcttggctgagaagttcaagctcctaccgaagatgatactcgaaacgccaccgccctacccttgcgggtttgtgatgatgcctcgcacaccggcgccttctgtgggtgcggagagcgaccttaccgttggctcagtagccactgaagacgttccgcacattctcggtaatgcgcggggtgtcaacaaaacgaccgaccaggaacccctagtaccctttgcaggtggatcgacagatgaccaacctgctggagaactcgggacacaggcttctcccgcagacacaggcggcgccgacttaggtttaaattctggaggattgccggagcacgctggcttgtcgcctccagacggtgcaaacacaggtagaaggagaccgttgtgtacggtcaaggtgaaggctgagaagtacttcgacctgctgagccggtgggtttttggaatcgtctcccatctccctgtttttttctcgcgtctgtttagggccgacggtcattattctccgagtgattggggctttgcagcttttactttattgtgcctcattctgtgttacagttatcctgcgtttggtgtcgctccccttgtgggcgtattttctgggacttctcggcgcgttcgcatgggggtttttggctgctggctggctttcgctattggtttgttcaagcctgtatccgacccagtcggcactgcttgtgagtttgactcgccagagtgtagagacatccttcactcttttgagcttctgcaaccttgggaacctgttcgcagccttgtgttgggccccgtcggactcagccttgccgttcttggcaggttactgggcggggcacgccatatctggttgcttctgcttaggcttggcatcctatcagactgtgttctggctggagcctatgtgctttcgcagggcaggtgcaaaaaatgctggggatcttgtataaggaccgcccccagtgaggtcgccttcaacgtgttccctttcacacgtgcaaccaggtcttcactcatcaatctgtgcgatcgattttgtgcaccaaaggggatggatcctatcttcctcgccactggatggcgcggatgttggaccggccaaagccccatcgagcaaccatctgataaacccatcgcgtacgcccaattggatgaaaagaaaatcacggccaggactgtggttgctcaaccttacgatcccaaccaggctgtaaagtgtttacgggttttgcagggtggtggggtgatggtggcggaggctgttccaaaagtaactaaggtttctgtcattccgtttcgagcccctttttttcccaccggagtgaaagttgaccctgactgcaggattgtggtcgaccctgacacctttacaacggctctccggtctggctactctacttcaaacctcatccttggcgttggggattttgcccagctgaatgggttgaaagtcaggcagatctccaggccctcaggaggaggcccacacctcgcagctgccctgcatgttgcttgctcgatgaccttgcacatgcttgccggaatttatgtgacctccgtgggtacctgtggcactggcaccaacgacccgtggtgcactgacccgttcgccgtccctggttacggacccggctctctttgcacatctaggttgtgcatctcccaacacggcctcacactgcccttgacggcattagtgaccgggtttggcgttcaggaaattgctttagttgttttgatttttgtttccatcggtggcttggctcaccggttgagttgtaaggctgatgtgatgtttgtcttgctcgcaattgcaagctatgtttgggcacctctcacctggctgctttgtttatttccttgctggctgcggtgtttttctctgcaccctttcaccattttatggttggtgtttttcctgatctctgtaaatgcgccttcgggaattttagccttggtgttgttggtcttcctttggctcctcggtcgttacaccaatgttgccggtcttgtcaccccctatgacattcatcactataccaatggcccccgcggtgttgctgccttggctaccgcaccggacgggacctaccttgccgccgtccgccgcgccgcgttaactggtcgcaccatgttgtttaccccgtcccagctcgggtcccttcttgagggcgctttcagaacccaaaagccttcgttgaacaccgtcaacgtggtcgggtcctctatgggctccggtggggtgtttaccattgacgggagaataaagtgcgtgaccgctgcacacgttctctcgggtaactctgccagagtttccggggtcggtttcaaccaaatgcttgactttgatgtgaacggagacttcgcagtggccgattgcccaaactggcaaggtgtcgcacccaagaccagattctgcagcgacgactggactggtcgcgcctattggctaacgtcctctggcgttgaacccggcgttattggaaaggggtttgcattttgcttcaccgcgtgtggcgattccgggtcccctgtaattaccgaggccggagagcttgtcggagttcacacagggtcaaacaagcaaggaggaggcattgtcacacgtccctcaggccagttttgcaatgtgacgcccaccaaattaagtgaattaagcgaattctttgctgggccaaaggtcccgcttggcgatgtgaaaatcggcagtcatataattagggatgtaagcgaggtaccttcagatctttgcgccttgcttgctgccaaacccgaactggaaggaggtctctccaccgtccaacttctgtgtgtgtttttcctcctgtggagaatgatgggacacgcttggacacccttagttgccgttggtttctttgtcttaaatgaggttctcccagctgtgctagtccggagtgttttctctttcggaatgtttgtgctgtcatggctcactccgtggtctgcgcaagttctgatgatcaggcttctaacagcagctcttaacaggaacagactttcactcgtgttttacagtcttggagcagtgactggttttgtcgcagatcttgcggcaactcaagggcacccgttgcagacagtaatgaatttgagcacttatgccttcctgcctcgggtaatggtcgtgacctcaccagtcccggtgattgcgtgtggtgttgtgcacctccttgccataattttgtatctgtttaaacaccgctgcctgcattttgttcttgttggtgacggagtgttctctgcagctttcttcttgcgatattttgccgaggggaaattgagggaaggggtgtcgcaatcctgcggaatgaatcatgaatccctaactggtgcactcgctttgaaacttaatgatgaggacttggattttcttacaaaatggactgattttaagtgctttgtatctgcatccaacatgaggaatgcggcgggtcaatttatagaggccgcctatgctaaagcacttagagtggaactggctcagttggtacaggttgacaaggtccgaggcaccttggccaaactcgaggctttcgccgataccgtagcaccccaactctcgcccggtgacattgttgttgcccttggtcacacgcctgttggcagcatcttcgacctaaaggttggtagcaccaagcacactctacaagctattgagactagagtccttgccgggtccaaaatgactgtggcgcgtgtcgttgacccaacccccgcacccccgcctatacctgtgcccgtccctctcccatcgaaagttctggagaacggtcccaatgcctggggggatgaggaccgtttgaacaagaagaagaggcgcagaatggaagctgtcggcatttttgtcatggacgggaaaaagtaccaaaaattttgggacaagaattccggtgatgtgttttatgaggaggtccatgttagcacagacgagtgggagtgccttagaactggcgaccctgtcgactttgatcctgagacagggattcagtgtgggcatatcaccattgaagataaggtttacaatgtcttcacctccccatctggtaggaaattcttggtccccgccaaccccgagaatagaagagctcagtgggaagccgccaagctttccgtggagcaagcccttggtatgatgaacgtcgacggcgaactgactgccaaagaactggagaaactgaaaagaataattgacaaactccagggcctgattaaggagcagtgtttaaactgctagccgccagcggcttgacccgctgtggtcgcggcggcttagttgttactgagacagcggtaaaaatagtcaaatttcacaaccggaccttcaccctaggacctgtgaacttaaaagtggccagtgaggttgagctaaaagacgcggttgagcataaccagcatccggttgctagaccggttgatggtggtgtcgtgctcctgcgctctgcagttccttcgcttatagatgtcctgatctccggcgctgatacatctcctaagttactcgcccgccacgggccgggaaacactgggattgatggcacgctttgggattttgaggccgaggctactaaagaggaagttgcactcagtgcgcaaataatacaggcttgtgatattaggcgcggcgacgcacctgaaattggtctcccttacaagttgtaccctgttaggggcaaccctgagcgggtaaaaggggtcctggagaacacaaggtttggagatataccttacaaaacccccagtgacactggaagcccggtgcacgcggctgcctgcctcacgcctaatgctactccggtgactgatgggcgctccgtcttggctacaaccatgccctctggctttgagttgtatgtgccgaccattccagcgtccgtccttgattatcttgattctaggcctgactgccctaaacagttaacagagcacggttgtgaggatgctgcattaagagacctctccaagtatgatttgtccacccaaggctttgttttgcccggtgttcttcgccttgtgcggaggtacctgttcacccacgtgggtaagtgcccgcccgttcatcggccttccacttaccctgctaagaattctatggctggaataaatgggaataggtttccaaccaaggacattcagagcgtcccagaaatcgacgttctgtgcgcacaggctgtgcgagaaaactggcaaactgttaccccttgtaccctcaagaaacagtactgtgggaagaagaagactaggacaatacttggcaccaataacttcattgcgttggcccatcgggcagtgttgagtggcgttacccagggcttcatgaaaaaagcgttcaactcgcccatcgccctcgggaaaaacaaatttaaggagctacaagccccggtcctaggcaggtgccttgaagctgatcttgcgtcctgcgatcgatccacacctgcaattgtccgctggtttgccgccaatcttctttatgaacttgcctgtgctgaggagcatctaccgtcgtacgtactgaactgctgccacgacttactggtcacgcagtccggcgcggtgactaagagaggtggcctgtcgtctggcgacccgattacctctgtgtcaaacaccatttacagcttagtgatatatgcacagcacatggtgctcagttacttcaaaagtgctcaccctcatggccttctgtttctgcaagaccaactgaagtttgaggacatgctcaaggttcaacccctgatcgtctattcggacgaccttgtgctgtatgccgagtctccctccatgccaaactaccactggtgggttgaacatctgaaccttatgctgggtttccagacggacccaaagaagacaaccatcacagactcaccatcattcctaggttgcaggataataaatgggcgacagctggtccctaaccgtgacaggatcctcgcggccctcgcctaccacatgaaggcgagcaatgtgtctgaatactacgcctcagcggccgcgatactcatggacagctgtgcttgtcttgagtacgatcccgagtggtttgaagagctcgtggtaggaattgcgcagtgcgctcgcaaggacggctacagctttcccggcccgccgttcttcctgtctatgtgggaaaaattgaggtctaatcacgaggggaagaagtccagaatgtgcgggtactgcggagcgccggctccgtacgccaccgcttgtggcctcgatgtctgtgtctaccacacccacttccaccagcattgtccagtcgtgatctggtgtggtcatccagcgggttctggttcttgtagtgagtgcaaacctcccctaggaaaaggcacgagccctctagacgaggtattggagcaagtcccgtataagcctccacgaacagtgatcatgcatgtggagcagggtctcactccgcttgacccaggccggtaccaaacccgtcgcggattggtttccgttaggcgtggcattaggggaaatgaagttgacctaccagacggtgattacgctagtaccgccttgctccccacttgcaaggagatcaacatggtcgccgtcgcctccaacgtgttgcgcagcaggtttatcattggtccccccggtgctgggaaaacgcactggctcctccagcaagtccaggacggcgatgttatttacacgccgactcaccaaaccatgctcgacatgattagggctttggggacgtgccggttcaatgtcccaaccggtacgacgctgcagttccctgccccctctcgcaccggcccatgggttcgcatcttggccggcggttggtgtcccggcaagaattccttcctggatgaggcagcgtactgcaatcaccttgatgttttaaggcttctcagcaagaccacccttacctgcctgggagacttcaagcagctccacccggtgggttttgactcccattgctatgtttttgatatcatgcctcaaactcaactaaggaccatatggagattcggacagaatgtctgtgatgccattcagccagaatacagggacaaacttgtatccatggtcaacacaacccgtgtgacttacgtggagagacctgttcggtacgggcaggtcctcaccccttaccacagggaccgagaagatggcgccatcactatcgactccagtcaaggcgccacatttgatgtagtcacactgcatttgccggctaaagattcactaaacagacaaagagcccttgttgctattactagggcaaggcatgctatctttgtgtatgacccacacaggcaattgcagaatgtgtttgacctccctgccaagagcacacccgtcaacctcgcggtgctccgtgatgagcagctaatcgtgttagacagaaataataaggagtgcacggttgctcaggctctgggcaatggagataagttcagagccacagacaagcgcgtcgtagattctctccgcgccatttgtgctgatttggaagggtcgagctccccgctcccaaaagtcgcacataacttgggattttacttctcacctgatttgacacagtttgccaaacttccggcagaacttgcgcctcattggcccgtggtgacaacccagaacaatgacaagtggccagaccggttggtagccagccttcgccccatccacaaatatagccgcgcgtgcattggtgccggttacatggtgggcccgtcggtgttcctaggcgcccctggggttgtgtcatactacctcacgaaatttgtcaaaggtgaggctcaagtgctcccagaaactatcttcagcaccggccgaattgaggtagattgccgagaatatcttgacgatcgagagcgagaggttgctgcatcgctcccgcacgccttcatcggcgacgttaaaggcactaccgtcggcgggtgccatcacgtcacttccaaatactttccacgtttcctccccaaggaatcagttgcggtggtcggggtctctagccccggaaaggccgcaaaggcaatgtgtacattgacagatgtgtacctcccggaccttgaagcctaccttcacccggatactccgtccaaatgttggaaaatgatgttggacttcaaggaggtgaaactgatggtctggaagaattcgacggcctacttccaacttgaaggtcgccatttcacctggtaccagcttgctagttacgcttcgtacatccgtgttcctgtcaactccacggtgtacttggacccctgcatgggccctgctctctgcaacaggagggtcgtcgggtccactcattggggagctgacctcgcggtcaccccttatgactacggtgccaaacttattttgtctagcgcgtaccacggtgaaatgccccccgggtataaaatcctagcatgtgcggagttttcacttgacgacccagtcaggtataagcacacatgggggtttgaatcggacacagcgtatctgtatgagttcactgaagacggggaggactgggaagattacaatgatgcgtttcgcgcgcgccagaaagggaagatttacaaggctactgccacgaacatgaggttttattttcccccgggtcccgttgttgaaccaactttgggtctgaactgaaatgaaatgggggccgtacaaagcctctttgacaaaatcggccaactctttgtggacgcttttacggagtttctggtgtctattgttgacatcatcatatttttggccattctgtttggcttcacaatcgccggatggttggtggtattttgcatcagattggtttgctccgcgatactccgtgcgcgccctgccattcactctgagcaattacagaagatcctatgaggcctatctttcccagtgccgaggggacattcccacctggggggtcaaacaccctttggggatgttctggcatcacaaggtgtcgaccctaattgatgaaatggtgtcgcgtcgaatgtaccgcgtcatggataaagccgggcaggctgcctggaaacaggtggtgagtgaggccacgttgtctcgcatcagtggcttggacgtagtggctcactttcagcatcttgccgccattgaggccgagacttgtaaatatttagcctcccgactgcccatgctgcataatctgcgcgctgcagggtctaatgtaaccatagtgtataatagcactttgcatcaggtgtgtgccatttttccaacccctggttcccggccaaagcttcatgatttccagcaatggctaatagccgtacattcatccatattctcctctgttgcagcttcttgtactctttttgttgtgctatggttgcgagtgccaattctacgtactgtttttggtttccactggttaggggcaatttttccttcgagctcttggtgaattacacggtgtgtccaccttgccttacccgacaagcggcagcacagatttctgagcccaacaggtccctttggtgcaggatcggcaatgatcggtgcgaggaaagtgatcatgacgagctgggatttgttataccacccggcctctccaatgagggtcacctgaccagcgtttacgcctggctggcgttcttgtccttcagctacacagcccagtaccatcccgaaatatttgggatagggaatgtgagcaaagtttatgttgacatcaagaaccagttcatttgtgctgaacatgatggacagaacgccaccttacctcgccatgacaacatctcagctgtgtttcagacttattatcagcatcaggtcgatggtggcaattggtttcacctagaatggctgcgccccttcttttcctcttggttagttttgaatgtttcatggtttctcaggcgttcgcctgtaagccatgtttcagttcaagtctttcagaaatcaagaccaacaccactgcagcagcaggctttgctgtcctccaagacatcggctgtcttaggcatagcgactcgtcctctaagacgtttcgcaaaatccctcaatgccgtacggcgatagggactcccgtgtatatcactattacagctaatgtcacagatgaaaactatttgcactcttctgacctcctcatgctttcttcttgccttttttacgcctccgagatgagcgaaaaggggtttaaggtgttgtttggcaatgtgtcgggcatcgtggccgtgtgtgtcaatttcactaactatgtccagcacgtcaaagagtttacccatcgctctctggtggtcgaccatgtgcggctacttcatttcatgacacctgaaaccatgaggtgggcaactgttttagcctgtctttttgccattctgctggcaatttgaatgtttagatatgttggggaaatgcttgaccgcgggttattgctcgcaattgcttttttcgtggtgtatcgtgccattctgttttgctgtgctcgtcaacgccaacggcaacagcagctcccatttacagttgatttataacctgacgatatgtgagctgaatggcacagattggcttaacaaaaaatttgactgggcagtggagactttcgttatctttcctgcgttgactcatatcgtctcttacggtgcccttactactagccatcttcttgacacggtcggcctaatcactgtgtctaccgccggttattatcacgggcggtatgtgttgagtagcatctacgctgtttgtgctctggctgcgctgatttgcttcaccattaggctatcaaaaaattgcatgtcctggcgctactcatgcaccaggtataccaattttcttctggacaccaagggcaaactctaccgctggcggtcacccgtcatcatagagaaggggggtaaagttgatgttgagggtcatctaatcgacctcaagagagttgtgcttgacggttccgcggcaacccctgtaaccaagatttcagcggaacaatggtgtcgtccatagacgacttctgcaatgacagcacggctgtacaaaaggtgcttttggcgttctctatcacctacacgccaataatgatatatgccttaaaggtaagtcgcggtcgactccttgggctcttgcacctcttaattttcctgaattgtgcatttacttttgggtatatgacatttgttcactttcagagtacaaataaagtcgcactcaccatgggtgcggtggtcgccctcctctggggggtgtattcagccatagagacctggagattcatcacctccaggtgccggttgtgcttgctaggccgcaggtacattctggcccctgcccaccacgttgaaagtgccgctggctttcatccgataacggcaagtgataaccacgcatttgtcgtccggcgtcccggctccactacggtcaacggcacactggtgcccgggttgaaaagcctcgtgttgggtggcagaaaagctgttaaacgaggggtggtaaaccttgttaaatatgccaaataataacggcaaacagcaaaacaaaaagaaggggaaaggccagccggtcgatcagctgtgccaaatgctgggtaagattattgcccaacagaaccagtccagaggcaagggaccgggaaagaagaataagaataaaaacccggagaagccccattttcctctagcgactgaagatgacgtcagacatcactttacccctagtgaacgacaattgtgtctatcgtcaatccggactgcctttaatcagggcgctggatcctgcaccctgtcagactcagggaggataagttacactgtggagtttagtctgcctactcatcatactgtgcgcctgattcgcgttacagcgtcaccctcagcatgatgagctggcattcttgagacatcccgatgtttgaattggaagaatgagtggtgaatggcactgattgacattgtgcctctaagtcacctattcaattagggcgaccgcatgggggtacttaattggcgagaaccatgcgccggaaattaaa"
+    }
+  }
+}

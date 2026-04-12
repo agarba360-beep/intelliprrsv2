@@ -1,0 +1,100 @@
+nano /home/abubakar/intelliprrsv2/scripts/run_pipeline_ultrafast_real.sh
+nano /home/abubakar/intelliprrsv2/scripts/run_pipeline_ultrafa#!/bin/bash
+# ============================================================
+# 🧠 IntelliPRRSV2 — Full Real Data Pipeline (Ultra-Fast Mode)
+# ============================================================
+# Runs all layers from data acquisition to miRNA analysis
+# ============================================================
+
+set -e
+echo "==============================================="
+echo "🧠 IntelliPRRSV2 — FULL REAL DATA PIPELINE (Ultra-Fast)"
+echo "📅 Started: $(date)"
+echo "==============================================="
+
+BASE_DIR="/home/abubakar/intelliprrsv2"
+LOG_DIR="$BASE_DIR/logs"
+mkdir -p "$LOG_DIR"
+
+source "$BASE_DIR/venv/bin/activate"
+
+# ------------------------------------------------------------
+# Layer 1 — Data Acquisition (limit 100 seqs for speed)
+# ------------------------------------------------------------
+echo "📡 LAYER 1: Fetching PRRSV sequences (real, limited 100)..."
+python3 "$BASE_DIR/scripts/fetch_prrsv_ultrafast.py" >> "$LOG_DIR/fetch.log" 2>&1
+echo "✅ Data acquisition complete."
+
+# ------------------------------------------------------------
+# Layer 2 — Data Cleaning & Standardization
+# ------------------------------------------------------------
+echo "🧹 LAYER 2: Cleaning and standardizing sequences..."
+python3 "$BASE_DIR/scripts/clean_sequences_parallel.py" >> "$LOG_DIR/clean.log" 2>&1
+echo "✅ Cleaning complete."
+
+# ------------------------------------------------------------
+# Layer 3 — Mutation Hotspot Analysis
+# ------------------------------------------------------------
+echo "🔥 LAYER 3: Running mutation hotspot detection..."
+python3 "$BASE_DIR/scripts/mutation_hotspot_fast.py" >> "$LOG_DIR/mutation.log" 2>&1
+echo "✅ Mutation hotspot analysis done."
+# ------------------------------------------------------------
+# Layer 4 — Phylogenetic Lineage Assignment (Ultrafast)
+# ------------------------------------------------------------
+echo "🌳 LAYER 4: Building ultrafast FastTree and assigning real lineages..."
+python3 "$BASE_DIR/scripts/build_phylogeny_optimized.py" >> "$LOG_DIR/phylogeny_ultrafast.log" 2>&1
+if [ $? -eq 0 ]; then
+    echo "✅ Ultrafast phylogenetic tree and lineages complete."
+else
+    echo "❌ Layer 4 failed — check $LOG_DIR/phylogeny_ultrafast.log for errors."
+    exit 1
+fi
+
+
+# ------------------------------------------------------------
+# Layer 5 — Vaccine Escape Prediction (AI model)
+# ------------------------------------------------------------
+echo "💉 LAYER 5: Predicting vaccine escape potential..."
+python3 "$BASE_DIR/scripts/vaccine_escape_ai_fast.py" >> "$LOG_DIR/vaccine.log" 2>&1
+echo "✅ Vaccine escape prediction complete."
+
+# ------------------------------------------------------------
+# Layer 6 — miRNA Interaction Mapping (Real miRNAs)
+# ------------------------------------------------------------
+echo "🧬 LAYER 6: Mapping miRNA–PRRSV interactions..."
+python3 "$BASE_DIR/scripts/mirna_interaction_fast_real.py" >> "$LOG_DIR/mirna.log" 2>&1
+echo "✅ miRNA interaction mapping complete."
+
+# ------------------------------------------------------------
+# Layer 7 — Summary Generation
+# ------------------------------------------------------------
+echo "📊 LAYER 7: Summarizing miRNA interactions for dashboard..."
+python3 "$BASE_DIR/scripts/summarize_mirna_interactions_real.py" >> "$LOG_DIR/summary.log" 2>&1
+echo "✅ Summary generation complete."
+
+# ------------------------------------------------------------
+# Layer 8 — Launch Streamlit Dashboard (auto)
+# ------------------------------------------------------------
+echo "📈 LAYER 8: Launching IntelliPRRSV2 dashboard..."
+DASHBOARD_DIR="$BASE_DIR/dashboard"
+
+if [ -d "$DASHBOARD_DIR" ]; then
+    cd "$DASHBOARD_DIR"
+    echo "⚙️ Starting Streamlit dashboard..."
+    nohup streamlit run app.py --server.port 8501 > "$LOG_DIR/dashboard.log" 2>&1 &
+    echo "✅ Dashboard started at: http://$(hostname -I | awk '{print $1}'):8501"
+else
+    echo "❌ Dashboard directory not found at $DASHBOARD_DIR"
+fi
+
+echo "==============================================="
+echo "🏁 PIPELINE COMPLETE — $(date)"
+echo "✅ All results saved under: $BASE_DIR/results/"
+echo "✅ Logs available under:    $LOG_DIR/"
+echo "==============================================="
+
+# deactivate virtual environment at the very end
+deactivate
+
+deactivate
+
