@@ -136,17 +136,10 @@ This enables:
 ### 📊 Overview
 ## 🖥️ Dashboard Preview
 
-### 📊 Overview
-![Overview](assets/overview.png)
-
-### 🧬 Mutation Hotspots
-![Mutation](assets/mutation.png)
-
-### 🌿 Lineage Trends
-![Lineage](assets/lineage.png)
-
-### 🌍 Geographic Distribution
-![Geo](assets/geo.png)
+![Overview](overview.png)
+![Mutation](mutation.png)
+![Lineage](lineage.png)
+![Geo](geo.png)
 ---
 
 ## ⚙️ Installation
