@@ -1,4 +1,10 @@
 # 🧬 IntelliPRRSV2  
+# 🧬 IntelliPRRSV2 — PRRSV Genomic Intelligence Platform
+
+🌐 **Live Dashboard:**  
+👉 https://dashboard.aiconceptlimited.com.ng/
+
+---
 ### Scalable Genomic Intelligence Platform for PRRSV Evolution, Mutation Analysis, and Vaccine Escape Prediction
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
